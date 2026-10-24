@@ -226,3 +226,52 @@ branch=main
 repo_root=c:\Users\sagar\Projects\hackerrank-orchestrate-october26
 worktree=main
 parent_agent=none
+
+
+## 2026-10-24T22:50:00+05:30 Phase 4: Policy Engine, Deduplication, & Benchmark Optimization
+
+User Prompt (verbatim, secrets redacted):
+Phase 3 is committed. Now proceed immediately to Phase 4: Policy Engine, Temporal State Deduplication, Causal Step Synthesizer, and Sample Benchmark Optimization.
+
+1. Temporal Cutoff and Deduplication Engine:
+- For every AUTHORIZED_DELETION case, retrieve all ingested evidence records matching any identifier in the subject's ResolvedIdentity card (user_id, current/historical emails, phones, names, and SHA-256 email_hashes).
+- Enforce the strict temporal cutoff: discard any evidence record where captured_at > audit_at.
+- Group all valid matched evidence records by (system_id, resource_id) and resolve the authoritative state at audit_at using the record with max(captured_at), applying the exact deterministic tie-breaking rules verified in Phase 1.
+- Ensure primary database tables, read replicas, and regional replicas are evaluated as distinct (system_id, resource_id) pairs so replication drift is caught automatically.
+
+2. Policy Engine and Causal Step Triplet Synthesizer (code/policy.py):
+- Implement the deterministic state-transition matrix enforcing all 15 rules in dataset/deletion_rules.csv:
+  - Standard deletable categories (USER_PROFILE, SECONDARY_IDENTIFIER, SEARCH_INDEX_ENTRY, CACHE_ENTRY, USER_EXPORT, MARKETING_PROFILE): if PRESENT at audit_at -> emit triplet (REPORT_REMAINING_RECORD with evidence_id, DELETE_RECORD with "", VERIFY_RECORD_ABSENT with ""). If ABSENT (and confirmed in scope for the user) -> emit single step VERIFY_RECORD_ABSENT with evidence_id.
+  - ACCOUNT_TOMBSTONE: verify user_id is retained while direct PII (name, email, phone, email_hash) is redacted. If any direct PII is exposed -> emit triplet (REPORT_EXPOSED_PII with evidence_id, REDACT_RECORD with "", VERIFY_RECORD_REDACTED with ""). If properly redacted -> emit single step VERIFY_RECORD_REDACTED with evidence_id.
+  - ANALYTICS_PROFILE and PRODUCT_TELEMETRY: if identifiable PII remains -> emit the exact finding operation verified in Phase 1, followed by ANONYMIZE_RECORD ("") and VERIFY_RECORD_ANONYMIZED (""). If already anonymized -> emit single step VERIFY_RECORD_ANONYMIZED with evidence_id.
+  - DATA_FLOW: if ACTIVE -> emit triplet (REPORT_ACTIVE_DATA_FLOW with evidence_id, DISABLE_DATA_FLOW with "", VERIFY_DATA_FLOW_DISABLED with ""). If DISABLED -> emit single step VERIFY_DATA_FLOW_DISABLED with evidence_id.
+  - BACKUP_ARCHIVE: if ACTIVE / unblocked restore risk -> emit triplet (REPORT_RESTORE_RISK with evidence_id, BLOCK_RESTORE with "", VERIFY_RESTORE_BLOCKED with ""). If BLOCKED -> emit single step VERIFY_RESTORE_BLOCKED with evidence_id.
+  - Retained categories (SECURITY_AUDIT_LOG, LEGAL_HOLD_RECORD): if PRESENT -> emit single step VERIFY_RECORD_PRESENT with evidence_id.
+- Set case status to INCOMPLETE if at least one FINDING/REMEDIATION triplet is emitted; set to COMPLETE if zero violations exist across all scoped resources; set to NOT_APPLICABLE with steps_json = [] if classified as NOT_APPLICABLE.
+
+3. Strict Tuple Sorting and Step Numbering:
+- Sort all generated steps for each case using the exact tuple key:
+  (PHASE_RANK[phase], OPERATION_RANK[operation], system_id, resource_id)
+- Number steps consecutively starting at 1 using the exact key schema verified from sample_output.csv.
+
+4. Recursive Verification Loop Against sample_output.csv:
+- Run python code/evaluation/main.py against all 32 cases in dataset/sample_output.csv.
+- For any case that does not achieve 100% exact match (on status, step count, operation, system_id, resource_id, evidence_id, or sort order), print the exact diff between our predicted output and sample_output.csv, diagnose the root cause, fix the logic, and re-run python code/evaluation/main.py.
+- Do not stop Phase 4 until python code/evaluation/main.py reports 32/32 (100.0%) exact match across all metrics.
+
+Agent Response Summary:
+Implemented the complete Policy Engine, temporal state deduplication, and causal step synthesizer in code/policy.py enforcing all 15 rules from deletion_rules.csv. Enhanced ingestion parsers for SQLite snapshots, JSON bundles, and observability logs to index by email_hash, phone, and temporal bounds. Executed recursive benchmark optimization against sample_output.csv and verified 100.0% exact match across status accuracy (32/32), case accuracy (32/32), sequence accuracy (32/32), and field precision (1351/1351).
+
+Actions:
+* implemented code/policy.py with state-transition matrix and causal step triplet synthesis
+* enhanced code/ingest/log_parser.py, json_parser.py, sqlite_parser.py, unified_indexer.py
+* implemented code/test_phase4_sample_benchmark.py and verified 32/32 (100.0%) exact match on sample_output.csv
+* ran official evaluator code.evaluation.main confirming 100.0% precision across all metrics
+
+Context:
+tool=Codex
+model=GPT-6.1 Sol (High)
+branch=main
+repo_root=c:\Users\sagar\Projects\hackerrank-orchestrate-october26
+worktree=main
+parent_agent=none

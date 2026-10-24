@@ -255,6 +255,46 @@
     "output_tokens": 25,
     "reason": "Customer authorized permanent account deletion/erasure"
   },
+  "case_33:067f07ea872347bf0ab8ce28f53ab89f8c96e53985e6c24c7ee69e0b212d964f": {
+    "case_id": "case_33",
+    "confidence": 1.0,
+    "input_tokens": 382,
+    "intent": "AUTHORIZED_DELETION",
+    "output_tokens": 25,
+    "reason": "Customer authorized permanent account deletion/erasure"
+  },
+  "case_34:d7cb81260a2c16c384f7c4b185f89fb4568da9cc555ecbf07d1f5119e59256ed": {
+    "case_id": "case_34",
+    "confidence": 1.0,
+    "input_tokens": 388,
+    "intent": "AUTHORIZED_DELETION",
+    "output_tokens": 25,
+    "reason": "Customer authorized permanent account deletion/erasure"
+  },
+  "case_35:bcf56fb55e0325d0352092027fb96191e422d62c59324512dd3279960857d7cc": {
+    "case_id": "case_35",
+    "confidence": 1.0,
+    "input_tokens": 384,
+    "intent": "AUTHORIZED_DELETION",
+    "output_tokens": 25,
+    "reason": "Customer authorized permanent account deletion/erasure"
+  },
+  "case_36:12d0b1499fca70d50c138605f56a9d774a8cdf1cf9cdc7fd9d914506fa6d3e68": {
+    "case_id": "case_36",
+    "confidence": 1.0,
+    "input_tokens": 382,
+    "intent": "AUTHORIZED_DELETION",
+    "output_tokens": 25,
+    "reason": "Customer authorized permanent account deletion/erasure"
+  },
+  "case_37:8ef18caf29ce4b6d23f7d455f5611aa77891631572f0743be9531679008344d1": {
+    "case_id": "case_37",
+    "confidence": 1.0,
+    "input_tokens": 387,
+    "intent": "AUTHORIZED_DELETION",
+    "output_tokens": 25,
+    "reason": "Customer authorized permanent account deletion/erasure"
+  },
   "case_533:598cb9570c7bd2c4d5ba73b787ee54adb32db1edd8af06a22fbb083de586d470": {
     "case_id": "case_533",
     "confidence": 1.0,

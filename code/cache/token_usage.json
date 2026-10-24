@@ -1,10 +1,10 @@
 {
   "model_name": "gpt-4o-mini",
-  "total_calls": 118,
-  "live_calls": 118,
-  "cached_calls": 0,
-  "input_tokens": 44531,
-  "output_tokens": 2950,
-  "total_tokens": 47481,
-  "estimated_cost_usd": 0.00844965
+  "total_calls": 347,
+  "live_calls": 123,
+  "cached_calls": 224,
+  "input_tokens": 46454,
+  "output_tokens": 3075,
+  "total_tokens": 49529,
+  "estimated_cost_usd": 0.008813099999999999
 }

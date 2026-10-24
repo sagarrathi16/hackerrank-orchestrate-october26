@@ -21,6 +21,8 @@ class EvidenceIndexer:
     def __init__(self) -> None:
         self.all_records: list[EvidenceRecord] = []
         self._by_email: dict[str, list[EvidenceRecord]] = defaultdict(list)
+        self._by_email_hash: dict[str, list[EvidenceRecord]] = defaultdict(list)
+        self._by_phone: dict[str, list[EvidenceRecord]] = defaultdict(list)
         self._by_user_id: dict[str, list[EvidenceRecord]] = defaultdict(list)
         self._by_resource_id: dict[str, list[EvidenceRecord]] = defaultdict(list)
         self._by_file_id: dict[str, list[EvidenceRecord]] = defaultdict(list)
@@ -80,6 +82,12 @@ class EvidenceIndexer:
         if record.email:
             self._by_email[record.email.strip().lower()].append(record)
 
+        if record.email_hash:
+            self._by_email_hash[record.email_hash.strip().lower()].append(record)
+
+        if record.phone:
+            self._by_phone[record.phone.strip()].append(record)
+
         if record.subject_reference:
             subj = record.subject_reference.strip().lower()
             if "@" in subj:
@@ -99,6 +107,24 @@ class EvidenceIndexer:
         # Query by emails
         for em in identity.emails:
             for rec in self._by_email.get(em.strip().lower(), []):
+                if rec.captured_at <= audit_at:
+                    key = (rec.file_id, rec.system_id, rec.resource_id)
+                    if key not in seen_keys:
+                        seen_keys.add(key)
+                        candidate_records.append(rec)
+
+        # Query by email_hashes
+        for h in identity.email_hashes:
+            for rec in self._by_email_hash.get(h.strip().lower(), []):
+                if rec.captured_at <= audit_at:
+                    key = (rec.file_id, rec.system_id, rec.resource_id)
+                    if key not in seen_keys:
+                        seen_keys.add(key)
+                        candidate_records.append(rec)
+
+        # Query by phones
+        for p in identity.phones:
+            for rec in self._by_phone.get(p.strip(), []):
                 if rec.captured_at <= audit_at:
                     key = (rec.file_id, rec.system_id, rec.resource_id)
                     if key not in seen_keys:

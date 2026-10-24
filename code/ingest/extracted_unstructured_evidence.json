@@ -747,7 +747,7 @@
       {
         "system_id": "support_platform",
         "resource_id": "support_001",
-        "data_category": "SUPPORT_MESSAGE",
+        "data_category": "SUPPORT_ATTACHMENT",
         "state": "PRESENT",
         "subject_reference": "priya.raman@gmail.com",
         "name": "Priya Raman",

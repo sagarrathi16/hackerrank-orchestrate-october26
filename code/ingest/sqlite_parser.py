@@ -53,29 +53,31 @@ def parse_sqlite_snapshot(file_path: str | Path, file_id: str, captured_at: str,
             origin_sys = str(row_dict.get("origin_system", ""))
             collection = str(row_dict.get("collection_name", ""))
             rec_json_str = str(row_dict.get("record_json", "{}"))
-            
             try:
                 rec_data = json.loads(rec_json_str)
             except Exception:
                 rec_data = {}
 
-            # Map category from collection_name or origin_system
+            merged = {**row_dict, **rec_data}
+            collection = str(merged.get("collection_name", "")) or table
+
+            # Map category from collection_name, table, or origin_system
             category = "UNKNOWN"
-            if "profile" in collection or "account" in collection:
+            if "profile" in collection or "account" in collection or "profile" in table or "account" in table:
                 category = "USER_PROFILE"
-            elif "search" in collection:
+            elif "search" in collection or "search" in table:
                 category = "SEARCH_INDEX_ENTRY"
-            elif "analytic" in collection:
+            elif "analytic" in collection or "analytic" in table:
                 category = "ANALYTICS_PROFILE"
-            elif "support" in collection:
+            elif "support" in collection or "support" in table:
                 category = "SUPPORT_MESSAGE"
-            elif "export" in collection:
+            elif "export" in collection or "export" in table:
                 category = "USER_EXPORT"
-            elif "backup" in collection:
+            elif "backup" in collection or "backup" in table:
                 category = "BACKUP_ARCHIVE"
-            elif "connector" in collection or "data_flow" in collection:
+            elif "connector" in collection or "data_flow" in collection or "connector" in table:
                 category = "DATA_FLOW"
-            elif "security" in collection or "audit" in collection:
+            elif "security" in collection or "audit" in collection or "security" in table:
                 category = "SECURITY_AUDIT_LOG"
 
             # Determine system_id
@@ -98,37 +100,45 @@ def parse_sqlite_snapshot(file_path: str | Path, file_id: str, captured_at: str,
             # Default is PRESENT unless specified
             state = "PRESENT"
             if category == "BACKUP_ARCHIVE":
-                restore_allowed = rec_data.get("restore_allowed", False)
-                state = "ACTIVE" if restore_allowed else "BLOCKED"
+                restore_allowed = str(merged.get("restore_allowed", "")).strip()
+                state = "ACTIVE" if restore_allowed in ["1", "true", "True"] else "BLOCKED"
             elif category == "DATA_FLOW":
-                enabled = rec_data.get("enabled", False)
-                state = "ACTIVE" if enabled else "DISABLED"
+                enabled = str(merged.get("enabled", "")).strip()
+                state = "ACTIVE" if enabled in ["1", "true", "True"] else "DISABLED"
             elif category == "ANALYTICS_PROFILE":
                 # Check if anonymized or identifiable
-                user_id = rec_data.get("user_id")
-                email = rec_data.get("email")
-                phone = rec_data.get("phone")
-                email_hash = rec_data.get("email_hash")
+                user_id = merged.get("user_id")
+                email = merged.get("email") or merged.get("customer_email")
+                phone = merged.get("phone")
+                email_hash = merged.get("email_hash")
                 if not any([user_id, email, phone, email_hash]):
                     state = "ANONYMIZED"
                 else:
                     state = "PRESENT"
+            elif category == "SUPPORT_MESSAGE":
+                email = merged.get("email") or merged.get("requester_email")
+                phone = merged.get("phone") or merged.get("requester_phone")
+                name = merged.get("full_name") or merged.get("requester_name")
+                if not any([email, phone, name]):
+                    state = "REDACTED"
+                else:
+                    state = "PRESENT"
 
             # Subject references
-            subj_ref = rec_data.get("user_id") or rec_data.get("subject_reference") or rec_data.get("customer_reference")
-            email = rec_data.get("email")
-            if not email and "document" in rec_data and isinstance(rec_data["document"], dict):
-                email = rec_data["document"].get("email")
+            subj_ref = merged.get("user_id") or merged.get("subject_reference") or merged.get("customer_reference")
+            email = merged.get("email") or merged.get("customer_email") or merged.get("owner_email") or merged.get("requester_email")
+            if not email and "document" in merged and isinstance(merged["document"], dict):
+                email = merged["document"].get("email")
                 if not subj_ref:
-                    subj_ref = rec_data["document"].get("customer_reference")
+                    subj_ref = merged["document"].get("customer_reference")
             
-            phone = rec_data.get("phone")
-            name = rec_data.get("full_name") or rec_data.get("display_name")
-            email_hash = rec_data.get("email_hash")
+            phone = merged.get("phone") or merged.get("owner_phone") or merged.get("requester_phone")
+            name = merged.get("full_name") or merged.get("display_name") or merged.get("requester_name")
+            email_hash = merged.get("email_hash")
 
             # Check if subject_selector in connector
-            if not email and "subject_selector" in rec_data:
-                sel = rec_data["subject_selector"]
+            if not email and "subject_selector" in merged:
+                sel = merged["subject_selector"]
                 if "@" in str(sel):
                     email = sel
                 else:

@@ -30,7 +30,7 @@ def parse_json_evidence_file(
         exp_at = data.get("exported_at", captured_at)
         source = data.get("source", origin)
         for snap in data["snapshots"]:
-            snap_time = snap.get("captured_at", exp_at)
+            snap_time = max(captured_at, snap.get("captured_at", captured_at))
             data_store = snap.get("data_store", "")
             collection = snap.get("collection", "")
             snap_records = snap.get("records", [])
@@ -76,11 +76,32 @@ def parse_json_evidence_file(
 
             for r in snap_records:
                 res_id = str(r.get("resource_id", ""))
-                subj_ref = r.get("subject_reference") or r.get("customer_reference")
+                subj_ref = r.get("subject_reference") or r.get("customer_reference") or r.get("user_id")
                 name = r.get("full_name") or r.get("name")
-                email = r.get("email")
+                email = r.get("email") or r.get("owner_email")
                 phone = r.get("phone")
                 email_hash = r.get("email_hash")
+
+                # Nested document in search snapshots
+                if "document" in r and isinstance(r["document"], dict):
+                    doc = r["document"]
+                    email = email or doc.get("email")
+                    name = name or doc.get("display_name") or doc.get("full_name")
+                    subj_ref = subj_ref or doc.get("customer_reference") or doc.get("user_id")
+
+                if not email and "uploaded_by" in r:
+                    up = str(r["uploaded_by"])
+                    if "@" in up:
+                        email = up
+                    else:
+                        subj_ref = subj_ref or up
+
+                if not email and "lookup_value" in r:
+                    lv = str(r["lookup_value"])
+                    if "@" in lv:
+                        email = lv
+                    else:
+                        subj_ref = subj_ref or lv
 
                 # State determination
                 state = "PRESENT"
@@ -148,11 +169,46 @@ def parse_json_evidence_file(
                     status_code = r.get("status_code")
                     obs_at = r.get("observed_at", exp_at)
 
+                    # Special handling for search index_queries with nested hits
+                    if "hits" in r and isinstance(r["hits"], dict) and "documents" in r["hits"]:
+                        docs = r["hits"]["documents"]
+                        total_hits = r["hits"].get("total", len(docs))
+                        query_str = str(r.get("query", ""))
+                        query_email = query_str if "@" in query_str else None
+
+                        for doc in docs:
+                            doc_res = str(doc.get("resource_id", "")) or res_id
+                            doc_email = doc.get("email") or query_email
+                            doc_subj = doc.get("customer_reference")
+                            doc_name = doc.get("display_name")
+                            doc_phone = doc.get("phone")
+                            doc_hash = doc.get("email_hash")
+                            doc_state = "PRESENT" if total_hits > 0 else "ABSENT"
+
+                            records.append(
+                                EvidenceRecord(
+                                    file_id=file_id,
+                                    origin=source,
+                                    captured_at=obs_at,
+                                    system_id=svc_name,
+                                    resource_id=doc_res,
+                                    data_category=cat,
+                                    state=doc_state,
+                                    subject_reference=str(doc_subj) if doc_subj else None,
+                                    email=str(doc_email) if doc_email else None,
+                                    phone=str(doc_phone) if doc_phone else None,
+                                    email_hash=str(doc_hash) if doc_hash else None,
+                                    name=str(doc_name) if doc_name else None,
+                                    attributes={"status_code": status_code, "collection": coll_name, "query": query_str, **doc},
+                                )
+                            )
+                        continue
+
                     subj_ref = r.get("customer_reference") or r.get("subject_reference")
-                    email = r.get("email")
-                    phone = r.get("phone")
+                    email = r.get("email") or r.get("customer_email") or r.get("owner_email") or r.get("requester_email")
+                    phone = r.get("phone") or r.get("owner_phone") or r.get("requester_phone")
                     email_hash = r.get("email_hash")
-                    name = r.get("full_name") or r.get("name")
+                    name = r.get("full_name") or r.get("name") or r.get("requester_name")
 
                     # If nested profile dict
                     if "profile" in r and isinstance(r["profile"], dict):
@@ -175,14 +231,23 @@ def parse_json_evidence_file(
                     if status_code == 404:
                         state = "ABSENT"
                     elif cat == "DATA_FLOW":
-                        status_str = str(r.get("status", "")).upper()
-                        state = "ACTIVE" if "ACTIVE" in status_str or "HEALTHY" in status_str or "ENABLED" in status_str else "DISABLED"
+                        if "enabled" in r:
+                            state = "ACTIVE" if r.get("enabled") else "DISABLED"
+                        else:
+                            status_str = str(r.get("status", "")).upper()
+                            state = "ACTIVE" if "ACTIVE" in status_str or "HEALTHY" in status_str or "ENABLED" in status_str else "DISABLED"
                     elif cat == "BACKUP_ARCHIVE":
                         restore_allowed = r.get("restore_allowed", False)
                         state = "ACTIVE" if restore_allowed else "BLOCKED"
                     elif cat == "ANALYTICS_PROFILE":
                         if not any([subj_ref, name, email, phone, email_hash]):
                             state = "ANONYMIZED"
+                        else:
+                            state = "PRESENT"
+                    elif cat == "SUPPORT_MESSAGE":
+                        # If PII was removed/redacted
+                        if not any([email, phone, name]):
+                            state = "REDACTED"
                         else:
                             state = "PRESENT"
 
