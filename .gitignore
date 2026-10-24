@@ -31,6 +31,18 @@ env/
 .ruff_cache/
 .coverage
 htmlcov/
+*.dump
+dump.txt
+evidence_*_dump.txt
+
+# Scratch & local verification scripts
+code/test_*.py
+scratch/
+
+# Local prediction & run artifacts
+*_pred.csv
+pred_*.csv
+prediction_*.csv
 
 # Operating system files
 .DS_Store
