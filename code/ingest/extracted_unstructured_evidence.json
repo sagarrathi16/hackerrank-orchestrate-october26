@@ -1,0 +1,792 @@
+[
+  {
+    "file_id": "evidence_04",
+    "file_path": "evidence/images/account_admin_console_20260926.png",
+    "origin": "account_admin_portal",
+    "captured_at": "2026-09-26T11:00:00Z",
+    "records": [
+      {
+        "system_id": "account_service",
+        "resource_id": "account_5762",
+        "data_category": "USER_PROFILE",
+        "state": "PRESENT",
+        "subject_reference": "user_11",
+        "name": "Haruka Sato",
+        "email": "haruka.s1838@zoho.com",
+        "phone": "+819076102507",
+        "email_hash": null,
+        "attributes": {
+          "membership_tier": "silver",
+          "signup_channel": "mobile_app",
+          "orders": [
+            "ORD-20265762",
+            "ORD-20265518"
+          ],
+          "support_tickets": [
+            "support_9538"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "file_id": "evidence_09",
+    "file_path": "evidence/images/search_index_inspector_20260901.png",
+    "origin": "search_index_admin",
+    "captured_at": "2026-09-01T06:00:00Z",
+    "records": [
+      {
+        "system_id": "search_service",
+        "resource_id": "search_428",
+        "data_category": "SEARCH_INDEX_ENTRY",
+        "state": "PRESENT",
+        "subject_reference": "user_13",
+        "name": "Gabriel Silva",
+        "email": "g.silva76@gmail.com",
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "index_name": "customer_directory_v3/prod-eu",
+          "hits": 2
+        }
+      },
+      {
+        "system_id": "search_service",
+        "resource_id": "search_1874",
+        "data_category": "SEARCH_INDEX_ENTRY",
+        "state": "PRESENT",
+        "subject_reference": "user_9842",
+        "name": "Gabriel Silva",
+        "email": "g.silva76.jr@gmail.com",
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "index_name": "customer_directory_v3/prod-eu",
+          "hits": 1
+        }
+      }
+    ]
+  },
+  {
+    "file_id": "evidence_14",
+    "file_path": "evidence/images/connector_management_console_20260807.png",
+    "origin": "integration_admin",
+    "captured_at": "2026-08-07T08:00:00Z",
+    "records": [
+      {
+        "system_id": "integration_service",
+        "resource_id": "data_flow_9846",
+        "data_category": "DATA_FLOW",
+        "state": "ACTIVE",
+        "subject_reference": "lucia-torres@gmail.com",
+        "name": null,
+        "email": "lucia-torres@gmail.com",
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "connector": "customer_analytics_warehouse",
+          "mode": "Continuous",
+          "status": "Healthy"
+        }
+      },
+      {
+        "system_id": "integration_service",
+        "resource_id": "data_flow_1121",
+        "data_category": "DATA_FLOW",
+        "state": "ACTIVE",
+        "subject_reference": "jain.aditi@gmail.com",
+        "name": null,
+        "email": "jain.aditi@gmail.com",
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "connector": "customer_analytics_warehouse",
+          "mode": "Continuous",
+          "status": "Healthy"
+        }
+      }
+    ]
+  },
+  {
+    "file_id": "evidence_18",
+    "file_path": "evidence/documents/account_history_report_20260718.pdf",
+    "origin": "account_history_service",
+    "captured_at": "2026-07-18T11:00:00Z",
+    "records": [
+      {
+        "system_id": "account_service",
+        "resource_id": "statement_1842",
+        "data_category": "USER_PROFILE",
+        "state": "PRESENT",
+        "subject_reference": "user_18",
+        "name": "Ingrid Dahl",
+        "email": "ingrid.dahl@outlook.com",
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "statement_reference": "NST-2026-0718-1842",
+          "order_reference": "ORD-20261260",
+          "payment_card": "Visa ending 4821",
+          "delivery_address": "24 Fjordgata, 7010 Trondheim, Norway"
+        }
+      }
+    ]
+  },
+  {
+    "file_id": "evidence_19",
+    "file_path": "evidence/images/analytics_profile_view_20260713.png",
+    "origin": "analytics_platform",
+    "captured_at": "2026-07-13T10:00:00Z",
+    "records": [
+      {
+        "system_id": "analytics_platform",
+        "resource_id": "analytics_7438",
+        "data_category": "ANALYTICS_PROFILE",
+        "state": "PRESENT",
+        "subject_reference": "user_20",
+        "name": "Omar Darwish",
+        "email": "darwish.omar@icloud.com",
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "market": "AE",
+          "sessions": 12,
+          "completed_orders": 2,
+          "revenue_usd": 167.42,
+          "last_activity": "2026-07-13T14:22:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "file_id": "evidence_23",
+    "file_path": "evidence/images/customer_export_console_20260618.png",
+    "origin": "export_service",
+    "captured_at": "2026-06-18T12:00:00Z",
+    "records": [
+      {
+        "system_id": "export_service",
+        "resource_id": "export_1260",
+        "data_category": "USER_EXPORT",
+        "state": "PRESENT",
+        "subject_reference": "ingrid.dahl@outlook.com",
+        "name": null,
+        "email": "ingrid.dahl@outlook.com",
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "filename": "customer_export_1260.zip",
+          "status": "Ready",
+          "expires_at": "2026-06-25T06:42:00Z",
+          "size_mb": 18.4
+        }
+      },
+      {
+        "system_id": "export_service",
+        "resource_id": "export_1261",
+        "data_category": "USER_EXPORT",
+        "state": "PRESENT",
+        "subject_reference": "marcus.lee@northstar.shop",
+        "name": null,
+        "email": "marcus.lee@northstar.shop",
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "filename": "customer_export_1261.zip",
+          "status": "Collecting"
+        }
+      },
+      {
+        "system_id": "export_service",
+        "resource_id": "export_1259",
+        "data_category": "USER_EXPORT",
+        "state": "PRESENT",
+        "subject_reference": "sara.kim@northstar.shop",
+        "name": null,
+        "email": "sara.kim@northstar.shop",
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "filename": "customer_export_1259.zip",
+          "status": "Packaging"
+        }
+      },
+      {
+        "system_id": "export_service",
+        "resource_id": "export_1258",
+        "data_category": "USER_EXPORT",
+        "state": "PRESENT",
+        "subject_reference": "daniel.park@northstar.shop",
+        "name": null,
+        "email": "daniel.park@northstar.shop",
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "filename": "customer_export_1258.zip",
+          "status": "Ready"
+        }
+      }
+    ]
+  },
+  {
+    "file_id": "evidence_27",
+    "file_path": "evidence/documents/legal_retention_register_20260529.pdf",
+    "origin": "legal_retention_service",
+    "captured_at": "2026-05-29T08:00:00Z",
+    "records": [
+      {
+        "system_id": "legal_retention_service",
+        "resource_id": "dispute_4118",
+        "data_category": "LEGAL_HOLD_RECORD",
+        "state": "PRESENT",
+        "subject_reference": "user_08",
+        "name": null,
+        "email": null,
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "order_id": "ORD-20264118",
+          "dispute_type": "Card dispute",
+          "retain_until": "2033-05-04",
+          "amount_usd": 184.2
+        }
+      },
+      {
+        "system_id": "legal_retention_service",
+        "resource_id": "dispute_4207",
+        "data_category": "LEGAL_HOLD_RECORD",
+        "state": "PRESENT",
+        "subject_reference": "user_12",
+        "name": null,
+        "email": null,
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "order_id": "ORD-20264207",
+          "dispute_type": "Tax correction",
+          "retain_until": "2033-05-09",
+          "amount_eur": 72.4
+        }
+      },
+      {
+        "system_id": "legal_retention_service",
+        "resource_id": "dispute_4319",
+        "data_category": "LEGAL_HOLD_RECORD",
+        "state": "PRESENT",
+        "subject_reference": "user_17",
+        "name": null,
+        "email": null,
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "order_id": "ORD-20264319",
+          "dispute_type": "Chargeback",
+          "retain_until": "2033-05-14",
+          "amount_gbp": 219.0
+        }
+      },
+      {
+        "system_id": "legal_retention_service",
+        "resource_id": "dispute_4402",
+        "data_category": "LEGAL_HOLD_RECORD",
+        "state": "PRESENT",
+        "subject_reference": "user_21",
+        "name": null,
+        "email": null,
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "order_id": "ORD-20264402",
+          "dispute_type": "Invoice inquiry",
+          "retain_until": "2033-05-18",
+          "amount_cad": 96.55
+        }
+      },
+      {
+        "system_id": "legal_retention_service",
+        "resource_id": "dispute_4511",
+        "data_category": "LEGAL_HOLD_RECORD",
+        "state": "PRESENT",
+        "subject_reference": "user_24",
+        "name": null,
+        "email": null,
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "order_id": "ORD-20264511",
+          "dispute_type": "Card dispute",
+          "retain_until": "2033-05-23",
+          "amount_aud": 311.8
+        }
+      },
+      {
+        "system_id": "legal_retention_service",
+        "resource_id": "dispute_4600",
+        "data_category": "LEGAL_HOLD_RECORD",
+        "state": "PRESENT",
+        "subject_reference": "user_29",
+        "name": null,
+        "email": null,
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "order_id": "ORD-20264600",
+          "dispute_type": "Tax record",
+          "retain_until": "2033-05-28",
+          "amount_usd": 48.75
+        }
+      }
+    ]
+  },
+  {
+    "file_id": "evidence_28",
+    "file_path": "evidence/images/support_ticket_console_20260524.png",
+    "origin": "support_platform",
+    "captured_at": "2026-05-24T07:00:00Z",
+    "records": [
+      {
+        "system_id": "support_platform",
+        "resource_id": "support_1034",
+        "data_category": "SUPPORT_MESSAGE",
+        "state": "PRESENT",
+        "subject_reference": "kagyeman8947@fastmail.com",
+        "name": "Kofi Agyeman",
+        "email": "kagyeman8947@fastmail.com",
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "ticket_id": "CS-5034",
+          "order_id": "ORD-20265034",
+          "status": "In transit",
+          "assigned_agent": "Maya Chen"
+        }
+      }
+    ]
+  },
+  {
+    "file_id": "evidence_32",
+    "file_path": "evidence/images/backup_restore_console_20260429.png",
+    "origin": "backup_service",
+    "captured_at": "2026-04-29T09:00:00Z",
+    "records": [
+      {
+        "system_id": "backup_service",
+        "resource_id": "backup_9287",
+        "data_category": "BACKUP_ARCHIVE",
+        "state": "ACTIVE",
+        "subject_reference": "areed1433@gmail.com",
+        "name": null,
+        "email": "areed1433@gmail.com",
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "region": "eu-west-1",
+          "size_gb": 84.7,
+          "encryption": "AES-256",
+          "created": "2026-04-26T02:00:00Z"
+        }
+      },
+      {
+        "system_id": "backup_service",
+        "resource_id": "backup_9291",
+        "data_category": "BACKUP_ARCHIVE",
+        "state": "ACTIVE",
+        "subject_reference": "bluepeakco@outlook.com",
+        "name": null,
+        "email": "bluepeakco@outlook.com",
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "region": "ap-southeast-1",
+          "size_gb": 102.3,
+          "encryption": "AES-256",
+          "created": "2026-04-26T02:00:00Z"
+        }
+      },
+      {
+        "system_id": "backup_service",
+        "resource_id": "backup_9288",
+        "data_category": "BACKUP_ARCHIVE",
+        "state": "ACTIVE",
+        "subject_reference": "miller.logistics@company.com",
+        "name": null,
+        "email": "miller.logistics@company.com",
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "region": "us-west-2",
+          "size_gb": 67.1,
+          "encryption": "AES-256",
+          "created": "2026-04-26T02:00:00Z"
+        }
+      },
+      {
+        "system_id": "backup_service",
+        "resource_id": "backup_9286",
+        "data_category": "BACKUP_ARCHIVE",
+        "state": "ACTIVE",
+        "subject_reference": "summit-retail@company.com",
+        "name": null,
+        "email": "summit-retail@company.com",
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "region": "us-east-1",
+          "size_gb": 91.4,
+          "encryption": "AES-256",
+          "created": "2026-04-26T02:00:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "file_id": "evidence_37",
+    "file_path": "evidence/images/security_audit_explorer_20260905.png",
+    "origin": "security_service",
+    "captured_at": "2026-09-05T07:00:00Z",
+    "records": [
+      {
+        "system_id": "security_service",
+        "resource_id": "audit_record_001",
+        "data_category": "SECURITY_AUDIT_LOG",
+        "state": "PRESENT",
+        "subject_reference": "user_03",
+        "name": null,
+        "email": null,
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "event": "Email change confirmed",
+          "actor": "User (self)",
+          "recorded_at": "2026-08-22T11:27:00Z"
+        }
+      },
+      {
+        "system_id": "security_service",
+        "resource_id": "audit_record_002",
+        "data_category": "SECURITY_AUDIT_LOG",
+        "state": "PRESENT",
+        "subject_reference": "user_03",
+        "name": null,
+        "email": null,
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "event": "Session revoked",
+          "actor": "Security system",
+          "recorded_at": "2026-08-25T03:21:00Z"
+        }
+      },
+      {
+        "system_id": "security_service",
+        "resource_id": "audit_record_003",
+        "data_category": "SECURITY_AUDIT_LOG",
+        "state": "PRESENT",
+        "subject_reference": "user_03",
+        "name": null,
+        "email": null,
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "event": "Account closure recorded",
+          "actor": "automated account workflow",
+          "recorded_at": "2026-08-25T04:03:00Z"
+        }
+      },
+      {
+        "system_id": "security_service",
+        "resource_id": "audit_record_004",
+        "data_category": "SECURITY_AUDIT_LOG",
+        "state": "PRESENT",
+        "subject_reference": "user_03",
+        "name": null,
+        "email": null,
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "event": "Password changed",
+          "actor": "User (self)",
+          "recorded_at": "2026-08-18T14:05:00Z"
+        }
+      },
+      {
+        "system_id": "security_service",
+        "resource_id": "audit_record_005",
+        "data_category": "SECURITY_AUDIT_LOG",
+        "state": "PRESENT",
+        "subject_reference": "user_03",
+        "name": null,
+        "email": null,
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "event": "Login from new device",
+          "actor": "User (self)",
+          "recorded_at": "2026-08-20T09:42:00Z"
+        }
+      },
+      {
+        "system_id": "security_service",
+        "resource_id": "audit_record_006",
+        "data_category": "SECURITY_AUDIT_LOG",
+        "state": "PRESENT",
+        "subject_reference": "user_03",
+        "name": null,
+        "email": null,
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "event": "Profile update",
+          "actor": "User (self)",
+          "recorded_at": "2026-08-22T11:27:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "file_id": "evidence_42",
+    "file_path": "evidence/images/deleted_account_reference_20260310.png",
+    "origin": "identity_service",
+    "captured_at": "2026-03-10T06:00:00Z",
+    "records": [
+      {
+        "system_id": "identity_service",
+        "resource_id": "tombstone_017",
+        "data_category": "ACCOUNT_TOMBSTONE",
+        "state": "PRESENT",
+        "subject_reference": "user_17",
+        "name": null,
+        "email": null,
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "customer_key": "user_17",
+          "created": "2024-01-11T08:42:00Z",
+          "updated": "2026-03-10T07:18:00Z",
+          "linked_orders": [
+            "ORD-20263245"
+          ],
+          "linked_support": [
+            "CS-3245",
+            "CS-3378"
+          ],
+          "linked_finance": [
+            "FIN-7742"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "file_id": "evidence_46",
+    "file_path": "evidence/images/object_storage_browser_20260213.png",
+    "origin": "object_storage",
+    "captured_at": "2026-02-13T08:00:00Z",
+    "records": [
+      {
+        "system_id": "object_storage",
+        "resource_id": "delivery_confirmation_19.pdf",
+        "data_category": "SUPPORT_MESSAGE",
+        "state": "PRESENT",
+        "subject_reference": null,
+        "name": null,
+        "email": null,
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "bucket": "northstar-customer-data",
+          "prefix": "support-attachments/2026/02",
+          "size_kb": 684
+        }
+      },
+      {
+        "system_id": "object_storage",
+        "resource_id": "delivery_confirmation_20.pdf",
+        "data_category": "SUPPORT_MESSAGE",
+        "state": "PRESENT",
+        "subject_reference": null,
+        "name": null,
+        "email": null,
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "bucket": "northstar-customer-data",
+          "prefix": "support-attachments/2026/02",
+          "size_kb": 712
+        }
+      },
+      {
+        "system_id": "object_storage",
+        "resource_id": "return_label_4821.pdf",
+        "data_category": "SUPPORT_MESSAGE",
+        "state": "PRESENT",
+        "subject_reference": null,
+        "name": null,
+        "email": null,
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "bucket": "northstar-customer-data",
+          "prefix": "support-attachments/2026/02",
+          "size_kb": 203
+        }
+      },
+      {
+        "system_id": "object_storage",
+        "resource_id": "return_label_4876.pdf",
+        "data_category": "SUPPORT_MESSAGE",
+        "state": "PRESENT",
+        "subject_reference": null,
+        "name": null,
+        "email": null,
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "bucket": "northstar-customer-data",
+          "prefix": "support-attachments/2026/02",
+          "size_kb": 198
+        }
+      },
+      {
+        "system_id": "object_storage",
+        "resource_id": "invoice_NS-10493.pdf",
+        "data_category": "TRANSACTION_RECORD",
+        "state": "PRESENT",
+        "subject_reference": null,
+        "name": null,
+        "email": null,
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "bucket": "northstar-customer-data",
+          "prefix": "support-attachments/2026/02",
+          "size_kb": 318
+        }
+      },
+      {
+        "system_id": "object_storage",
+        "resource_id": "parcel_damage_7713.jpg",
+        "data_category": "SUPPORT_MESSAGE",
+        "state": "PRESENT",
+        "subject_reference": null,
+        "name": null,
+        "email": null,
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "bucket": "northstar-customer-data",
+          "prefix": "support-attachments/2026/02",
+          "size_mb": 2.4
+        }
+      },
+      {
+        "system_id": "object_storage",
+        "resource_id": "customer_export_2026-02-10.zip",
+        "data_category": "USER_EXPORT",
+        "state": "PRESENT",
+        "subject_reference": null,
+        "name": null,
+        "email": null,
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "bucket": "northstar-customer-data",
+          "prefix": "support-attachments/2026/02",
+          "size_mb": 128
+        }
+      },
+      {
+        "system_id": "object_storage",
+        "resource_id": "customer_export_2026-02-12.zip",
+        "data_category": "USER_EXPORT",
+        "state": "PRESENT",
+        "subject_reference": null,
+        "name": null,
+        "email": null,
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "bucket": "northstar-customer-data",
+          "prefix": "support-attachments/2026/02",
+          "size_mb": 131
+        }
+      }
+    ]
+  },
+  {
+    "file_id": "evidence_55",
+    "file_path": "evidence/documents/security_retention_extract.pdf",
+    "origin": "security_service",
+    "captured_at": "2026-09-05T06:30:00Z",
+    "records": [
+      {
+        "system_id": "security_service",
+        "resource_id": "audit_record_003",
+        "data_category": "SECURITY_AUDIT_LOG",
+        "state": "PRESENT",
+        "subject_reference": "user_03",
+        "name": null,
+        "email": null,
+        "phone": null,
+        "email_hash": null,
+        "attributes": {
+          "journal_reference": "CJX-20260905-0630",
+          "event": "Account closure recorded",
+          "actor": "automated account workflow",
+          "retain_until": "2027-08-25T04:03:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "file_id": "evidence_58",
+    "file_path": "evidence/documents/delivery_correction_attachment.pdf",
+    "origin": "support_platform",
+    "captured_at": "2026-09-12T07:30:00Z",
+    "records": [
+      {
+        "system_id": "support_platform",
+        "resource_id": "support_001",
+        "data_category": "SUPPORT_MESSAGE",
+        "state": "PRESENT",
+        "subject_reference": "priya.raman@gmail.com",
+        "name": "Priya Raman",
+        "email": "priya.raman@gmail.com",
+        "phone": "+91 98765 73142",
+        "email_hash": null,
+        "attributes": {
+          "ticket_reference": "CS-4827 / support_001",
+          "order_reference": "ORD-20264827",
+          "submission_time": "2026-06-18T10:24:00Z",
+          "attachment": "delivery_address_correction.pdf"
+        }
+      }
+    ]
+  },
+  {
+    "file_id": "evidence_60",
+    "file_path": "evidence/images/marketing_profile_console.png",
+    "origin": "marketing_platform",
+    "captured_at": "2026-09-16T07:20:00Z",
+    "records": [
+      {
+        "system_id": "marketing_platform",
+        "resource_id": "marketing_001",
+        "data_category": "MARKETING_PROFILE",
+        "state": "PRESENT",
+        "subject_reference": "sj.park@naver.com",
+        "name": "Soo-jin Park",
+        "email": "sj.park@naver.com",
+        "phone": "+8210-5837-9451",
+        "email_hash": null,
+        "attributes": {
+          "email_opt_in": "Yes",
+          "sms_opt_in": "No",
+          "audience": "Returning customers-East Asia",
+          "market": "South Korea",
+          "last_refreshed": "2026-09-15T23:40:00Z"
+        }
+      }
+    ]
+  }
+]
