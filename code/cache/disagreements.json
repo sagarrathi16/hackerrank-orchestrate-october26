@@ -1,0 +1,184 @@
+[
+  {
+    "case_id": "case_90",
+    "request_text": "Please treat this message as a request for permanent account deletion. Please apply the correct treatment to records covered by the request. Let me know when the request has been completed.",
+    "llm_intent": "AUTHORIZED_DELETION",
+    "llm_reason": "The user is requesting permanent account deletion and follow-up confirmation of completion.",
+    "rule_intent": "NOT_APPLICABLE",
+    "rule_reason": "Non-deletion request: zero deletion keywords found",
+    "tokens": {
+      "prompt": 680,
+      "completion": 31
+    },
+    "latency_ms": 1042
+  },
+  {
+    "case_id": "case_103",
+    "request_text": "I am requesting deletion of the account registered to this email address. Please apply the correct treatment to records covered by the request. A short confirmation when the process is complete is sufficient.",
+    "llm_intent": "AUTHORIZED_DELETION",
+    "llm_reason": "The user is requesting deletion of their account and confirmation of the process completion.",
+    "rule_intent": "NOT_APPLICABLE",
+    "rule_reason": "Non-deletion request: zero deletion keywords found",
+    "tokens": {
+      "prompt": 682,
+      "completion": 32
+    },
+    "latency_ms": 1060
+  },
+  {
+    "case_id": "case_192",
+    "request_text": "Please treat this message as a request for permanent account deletion. Please apply the correct treatment to records covered by the request. Please contact me if you need information to verify the request.",
+    "llm_intent": "AUTHORIZED_DELETION",
+    "llm_reason": "The user is requesting permanent account deletion and mentions applying the correct treatment to records.",
+    "rule_intent": "NOT_APPLICABLE",
+    "rule_reason": "Non-deletion request: zero deletion keywords found",
+    "tokens": {
+      "prompt": 682,
+      "completion": 33
+    },
+    "latency_ms": 1174
+  },
+  {
+    "case_id": "case_289",
+    "request_text": "Please begin the deletion process for the account using this email address. Please apply the correct treatment to records covered by the request. Let me know when the request has been completed.",
+    "llm_intent": "AUTHORIZED_DELETION",
+    "llm_reason": "The user is requesting the deletion process for their account and is asking for confirmation once the request is completed.",
+    "rule_intent": "NOT_APPLICABLE",
+    "rule_reason": "Non-deletion request: zero deletion keywords found",
+    "tokens": {
+      "prompt": 681,
+      "completion": 38
+    },
+    "latency_ms": 1447
+  },
+  {
+    "case_id": "case_320",
+    "request_text": "Please process a permanent account-deletion request for this email address. Please apply the correct treatment to records covered by the request. Let me know when the request has been completed.",
+    "llm_intent": "AUTHORIZED_DELETION",
+    "llm_reason": "The user is requesting a permanent account deletion and follow-up confirmation of the request's completion.",
+    "rule_intent": "NOT_APPLICABLE",
+    "rule_reason": "Non-deletion request: zero deletion keywords found",
+    "tokens": {
+      "prompt": 681,
+      "completion": 35
+    },
+    "latency_ms": 1319
+  },
+  {
+    "case_id": "case_331",
+    "request_text": "Please process a permanent account-deletion request for this email address. Please apply the correct treatment to records covered by the request. A short confirmation when the process is complete is sufficient.",
+    "llm_intent": "AUTHORIZED_DELETION",
+    "llm_reason": "The user is requesting permanent account deletion and confirmation of the process completion.",
+    "rule_intent": "NOT_APPLICABLE",
+    "rule_reason": "Non-deletion request: zero deletion keywords found",
+    "tokens": {
+      "prompt": 682,
+      "completion": 31
+    },
+    "latency_ms": 1060
+  },
+  {
+    "case_id": "case_348",
+    "request_text": "Please treat this message as a request for permanent account deletion. Please apply the correct treatment to records covered by the request. Let me know when the request has been completed.",
+    "llm_intent": "AUTHORIZED_DELETION",
+    "llm_reason": "The user is explicitly requesting permanent account deletion and follow-up confirmation of completion.",
+    "rule_intent": "NOT_APPLICABLE",
+    "rule_reason": "Non-deletion request: zero deletion keywords found",
+    "tokens": {
+      "prompt": 680,
+      "completion": 32
+    },
+    "latency_ms": 1119
+  },
+  {
+    "case_id": "case_431",
+    "request_text": "Please treat this message as a request for permanent account deletion. Please apply the correct treatment to records covered by the request. Please confirm the result after completing the required checks.",
+    "llm_intent": "AUTHORIZED_DELETION",
+    "llm_reason": "The user is requesting permanent account deletion and confirmation of the result after the deletion process.",
+    "rule_intent": "NOT_APPLICABLE",
+    "rule_reason": "Non-deletion request: zero deletion keywords found",
+    "tokens": {
+      "prompt": 680,
+      "completion": 34
+    },
+    "latency_ms": 1166
+  },
+  {
+    "case_id": "case_534",
+    "request_text": "Please stop the promotional emails. I still need the account and my order history, so I am not asking for deletion.",
+    "llm_intent": "NOT_APPLICABLE",
+    "llm_reason": "The user is requesting to stop promotional emails while indicating they want to keep their account and order history, which does not involve account deletion.",
+    "rule_intent": "AUTHORIZED_DELETION",
+    "rule_reason": "Authorized account deletion request",
+    "tokens": {
+      "prompt": 670,
+      "completion": 44
+    },
+    "latency_ms": 1720
+  },
+  {
+    "case_id": "case_539",
+    "request_text": "Can you tell me what personal information you hold about me? This is an information request, not a request to erase it.",
+    "llm_intent": "NOT_APPLICABLE",
+    "llm_reason": "The user is requesting information about the personal data held, explicitly stating it is not a request to erase any data.",
+    "rule_intent": "AUTHORIZED_DELETION",
+    "rule_reason": "Authorized account deletion request",
+    "tokens": {
+      "prompt": 671,
+      "completion": 40
+    },
+    "latency_ms": 1435
+  },
+  {
+    "case_id": "case_540",
+    "request_text": "I need a copy of last year's invoices for my records. Please leave my profile and purchase history in place.",
+    "llm_intent": "NOT_APPLICABLE",
+    "llm_reason": "The user is requesting a copy of invoices while explicitly stating to keep their profile and purchase history intact.",
+    "rule_intent": "AUTHORIZED_DELETION",
+    "rule_reason": "Authorized account deletion request",
+    "tokens": {
+      "prompt": 668,
+      "completion": 37
+    },
+    "latency_ms": 1216
+  },
+  {
+    "case_id": "case_543",
+    "request_text": "Please process a permanent account-deletion request for this email address. Please apply the correct treatment to records covered by the request. I would appreciate confirmation of the final outcome.",
+    "llm_intent": "AUTHORIZED_DELETION",
+    "llm_reason": "The user is requesting permanent account deletion and confirmation of the outcome.",
+    "rule_intent": "NOT_APPLICABLE",
+    "rule_reason": "Non-deletion request: zero deletion keywords found",
+    "tokens": {
+      "prompt": 680,
+      "completion": 30
+    },
+    "latency_ms": 1106
+  },
+  {
+    "case_id": "case_542",
+    "request_text": "Could you send me a copy of the information held on my account? I still use it, so please don't delete or change anything.",
+    "llm_intent": "NOT_APPLICABLE",
+    "llm_reason": "The user is requesting a copy of the information held on their account while explicitly stating they do not want any deletion or changes.",
+    "rule_intent": "AUTHORIZED_DELETION",
+    "rule_reason": "Authorized account deletion request",
+    "tokens": {
+      "prompt": 673,
+      "completion": 42
+    },
+    "latency_ms": 1289
+  },
+  {
+    "case_id": "case_541",
+    "request_text": "Please change the email address used for this account. I want to continue using the service.",
+    "llm_intent": "NOT_APPLICABLE",
+    "llm_reason": "The user is requesting a change of email address while wanting to keep the account active.",
+    "rule_intent": "AUTHORIZED_DELETION",
+    "rule_reason": "Authorized account deletion request",
+    "tokens": {
+      "prompt": 664,
+      "completion": 34
+    },
+    "latency_ms": 1187
+  }
+]

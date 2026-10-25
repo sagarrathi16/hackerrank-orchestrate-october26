@@ -1,10 +1,3598 @@
 {
-  "model_name": "gpt-4o-mini",
-  "total_calls": 347,
-  "live_calls": 123,
-  "cached_calls": 224,
-  "input_tokens": 46454,
-  "output_tokens": 3075,
-  "total_tokens": 49529,
-  "estimated_cost_usd": 0.008813099999999999
+  "model_name": "openai/gpt-4o-mini",
+  "total_calls": 3166,
+  "live_calls": 512,
+  "cached_calls": 2654,
+  "input_tokens": 349486,
+  "output_tokens": 18262,
+  "total_tokens": 367748,
+  "total_latency_ms": 648282,
+  "avg_latency_ms": 1266.2,
+  "estimated_cost_usd": 0.06338,
+  "telemetry_by_case": {
+    "case_01": {
+      "prompt_tokens": 674,
+      "completion_tokens": 32,
+      "total_tokens": 706,
+      "latency_ms": 1343,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_02": {
+      "prompt_tokens": 678,
+      "completion_tokens": 35,
+      "total_tokens": 713,
+      "latency_ms": 1189,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_03": {
+      "prompt_tokens": 693,
+      "completion_tokens": 36,
+      "total_tokens": 729,
+      "latency_ms": 1132,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_04": {
+      "prompt_tokens": 669,
+      "completion_tokens": 42,
+      "total_tokens": 711,
+      "latency_ms": 1204,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_05": {
+      "prompt_tokens": 673,
+      "completion_tokens": 37,
+      "total_tokens": 710,
+      "latency_ms": 1173,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_06": {
+      "prompt_tokens": 672,
+      "completion_tokens": 39,
+      "total_tokens": 711,
+      "latency_ms": 1371,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_07": {
+      "prompt_tokens": 664,
+      "completion_tokens": 34,
+      "total_tokens": 698,
+      "latency_ms": 1197,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_08": {
+      "prompt_tokens": 671,
+      "completion_tokens": 39,
+      "total_tokens": 710,
+      "latency_ms": 1219,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_09": {
+      "prompt_tokens": 677,
+      "completion_tokens": 33,
+      "total_tokens": 710,
+      "latency_ms": 1005,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_10": {
+      "prompt_tokens": 671,
+      "completion_tokens": 46,
+      "total_tokens": 717,
+      "latency_ms": 1417,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_11": {
+      "prompt_tokens": 685,
+      "completion_tokens": 38,
+      "total_tokens": 723,
+      "latency_ms": 1327,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_12": {
+      "prompt_tokens": 680,
+      "completion_tokens": 38,
+      "total_tokens": 718,
+      "latency_ms": 1126,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_13": {
+      "prompt_tokens": 682,
+      "completion_tokens": 32,
+      "total_tokens": 714,
+      "latency_ms": 1394,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_14": {
+      "prompt_tokens": 710,
+      "completion_tokens": 42,
+      "total_tokens": 752,
+      "latency_ms": 1415,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_15": {
+      "prompt_tokens": 680,
+      "completion_tokens": 45,
+      "total_tokens": 725,
+      "latency_ms": 1543,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_16": {
+      "prompt_tokens": 680,
+      "completion_tokens": 31,
+      "total_tokens": 711,
+      "latency_ms": 1048,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_17": {
+      "prompt_tokens": 673,
+      "completion_tokens": 44,
+      "total_tokens": 717,
+      "latency_ms": 1345,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_18": {
+      "prompt_tokens": 687,
+      "completion_tokens": 34,
+      "total_tokens": 721,
+      "latency_ms": 1150,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_19": {
+      "prompt_tokens": 680,
+      "completion_tokens": 37,
+      "total_tokens": 717,
+      "latency_ms": 1230,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_20": {
+      "prompt_tokens": 679,
+      "completion_tokens": 33,
+      "total_tokens": 712,
+      "latency_ms": 1624,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_21": {
+      "prompt_tokens": 677,
+      "completion_tokens": 38,
+      "total_tokens": 715,
+      "latency_ms": 1101,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_22": {
+      "prompt_tokens": 677,
+      "completion_tokens": 30,
+      "total_tokens": 707,
+      "latency_ms": 997,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_23": {
+      "prompt_tokens": 677,
+      "completion_tokens": 41,
+      "total_tokens": 718,
+      "latency_ms": 1071,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_24": {
+      "prompt_tokens": 673,
+      "completion_tokens": 38,
+      "total_tokens": 711,
+      "latency_ms": 1097,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_25": {
+      "prompt_tokens": 675,
+      "completion_tokens": 33,
+      "total_tokens": 708,
+      "latency_ms": 1250,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_26": {
+      "prompt_tokens": 677,
+      "completion_tokens": 34,
+      "total_tokens": 711,
+      "latency_ms": 1208,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_27": {
+      "prompt_tokens": 672,
+      "completion_tokens": 36,
+      "total_tokens": 708,
+      "latency_ms": 1292,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_28": {
+      "prompt_tokens": 677,
+      "completion_tokens": 27,
+      "total_tokens": 704,
+      "latency_ms": 936,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_29": {
+      "prompt_tokens": 679,
+      "completion_tokens": 44,
+      "total_tokens": 723,
+      "latency_ms": 1531,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_30": {
+      "prompt_tokens": 681,
+      "completion_tokens": 35,
+      "total_tokens": 716,
+      "latency_ms": 1223,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_31": {
+      "prompt_tokens": 679,
+      "completion_tokens": 39,
+      "total_tokens": 718,
+      "latency_ms": 1035,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_32": {
+      "prompt_tokens": 678,
+      "completion_tokens": 42,
+      "total_tokens": 720,
+      "latency_ms": 1146,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_38": {
+      "prompt_tokens": 681,
+      "completion_tokens": 33,
+      "total_tokens": 714,
+      "latency_ms": 1215,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_36": {
+      "prompt_tokens": 682,
+      "completion_tokens": 30,
+      "total_tokens": 712,
+      "latency_ms": 1223,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_39": {
+      "prompt_tokens": 678,
+      "completion_tokens": 32,
+      "total_tokens": 710,
+      "latency_ms": 1263,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_34": {
+      "prompt_tokens": 685,
+      "completion_tokens": 34,
+      "total_tokens": 719,
+      "latency_ms": 1283,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_35": {
+      "prompt_tokens": 682,
+      "completion_tokens": 32,
+      "total_tokens": 714,
+      "latency_ms": 1316,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_33": {
+      "prompt_tokens": 680,
+      "completion_tokens": 40,
+      "total_tokens": 720,
+      "latency_ms": 1405,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_37": {
+      "prompt_tokens": 684,
+      "completion_tokens": 37,
+      "total_tokens": 721,
+      "latency_ms": 1745,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_40": {
+      "prompt_tokens": 682,
+      "completion_tokens": 33,
+      "total_tokens": 715,
+      "latency_ms": 2158,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_43": {
+      "prompt_tokens": 684,
+      "completion_tokens": 30,
+      "total_tokens": 714,
+      "latency_ms": 1054,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_41": {
+      "prompt_tokens": 680,
+      "completion_tokens": 42,
+      "total_tokens": 722,
+      "latency_ms": 1103,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_45": {
+      "prompt_tokens": 679,
+      "completion_tokens": 34,
+      "total_tokens": 713,
+      "latency_ms": 1074,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_46": {
+      "prompt_tokens": 680,
+      "completion_tokens": 37,
+      "total_tokens": 717,
+      "latency_ms": 1104,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_47": {
+      "prompt_tokens": 681,
+      "completion_tokens": 30,
+      "total_tokens": 711,
+      "latency_ms": 1130,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_42": {
+      "prompt_tokens": 685,
+      "completion_tokens": 36,
+      "total_tokens": 721,
+      "latency_ms": 1898,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_44": {
+      "prompt_tokens": 682,
+      "completion_tokens": 37,
+      "total_tokens": 719,
+      "latency_ms": 1945,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_48": {
+      "prompt_tokens": 680,
+      "completion_tokens": 42,
+      "total_tokens": 722,
+      "latency_ms": 1207,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_49": {
+      "prompt_tokens": 681,
+      "completion_tokens": 33,
+      "total_tokens": 714,
+      "latency_ms": 1121,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_51": {
+      "prompt_tokens": 682,
+      "completion_tokens": 31,
+      "total_tokens": 713,
+      "latency_ms": 1116,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_50": {
+      "prompt_tokens": 679,
+      "completion_tokens": 33,
+      "total_tokens": 712,
+      "latency_ms": 1498,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_53": {
+      "prompt_tokens": 677,
+      "completion_tokens": 30,
+      "total_tokens": 707,
+      "latency_ms": 1124,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_55": {
+      "prompt_tokens": 680,
+      "completion_tokens": 31,
+      "total_tokens": 711,
+      "latency_ms": 1175,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_52": {
+      "prompt_tokens": 687,
+      "completion_tokens": 34,
+      "total_tokens": 721,
+      "latency_ms": 1926,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_56": {
+      "prompt_tokens": 680,
+      "completion_tokens": 36,
+      "total_tokens": 716,
+      "latency_ms": 1191,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_54": {
+      "prompt_tokens": 689,
+      "completion_tokens": 40,
+      "total_tokens": 729,
+      "latency_ms": 1451,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_57": {
+      "prompt_tokens": 680,
+      "completion_tokens": 36,
+      "total_tokens": 716,
+      "latency_ms": 1200,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_60": {
+      "prompt_tokens": 683,
+      "completion_tokens": 32,
+      "total_tokens": 715,
+      "latency_ms": 1134,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_59": {
+      "prompt_tokens": 683,
+      "completion_tokens": 41,
+      "total_tokens": 724,
+      "latency_ms": 1376,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_58": {
+      "prompt_tokens": 683,
+      "completion_tokens": 34,
+      "total_tokens": 717,
+      "latency_ms": 1723,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_62": {
+      "prompt_tokens": 681,
+      "completion_tokens": 34,
+      "total_tokens": 715,
+      "latency_ms": 1233,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_64": {
+      "prompt_tokens": 685,
+      "completion_tokens": 32,
+      "total_tokens": 717,
+      "latency_ms": 1123,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_61": {
+      "prompt_tokens": 679,
+      "completion_tokens": 31,
+      "total_tokens": 710,
+      "latency_ms": 1351,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_63": {
+      "prompt_tokens": 677,
+      "completion_tokens": 33,
+      "total_tokens": 710,
+      "latency_ms": 1259,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_65": {
+      "prompt_tokens": 682,
+      "completion_tokens": 42,
+      "total_tokens": 724,
+      "latency_ms": 1379,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_66": {
+      "prompt_tokens": 691,
+      "completion_tokens": 46,
+      "total_tokens": 737,
+      "latency_ms": 1095,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_67": {
+      "prompt_tokens": 681,
+      "completion_tokens": 29,
+      "total_tokens": 710,
+      "latency_ms": 1157,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_68": {
+      "prompt_tokens": 681,
+      "completion_tokens": 35,
+      "total_tokens": 716,
+      "latency_ms": 1411,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_70": {
+      "prompt_tokens": 682,
+      "completion_tokens": 33,
+      "total_tokens": 715,
+      "latency_ms": 1090,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_71": {
+      "prompt_tokens": 680,
+      "completion_tokens": 32,
+      "total_tokens": 712,
+      "latency_ms": 1131,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_72": {
+      "prompt_tokens": 680,
+      "completion_tokens": 30,
+      "total_tokens": 710,
+      "latency_ms": 1218,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_73": {
+      "prompt_tokens": 677,
+      "completion_tokens": 33,
+      "total_tokens": 710,
+      "latency_ms": 1383,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_74": {
+      "prompt_tokens": 679,
+      "completion_tokens": 31,
+      "total_tokens": 710,
+      "latency_ms": 1214,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_69": {
+      "prompt_tokens": 687,
+      "completion_tokens": 35,
+      "total_tokens": 722,
+      "latency_ms": 1798,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_75": {
+      "prompt_tokens": 685,
+      "completion_tokens": 36,
+      "total_tokens": 721,
+      "latency_ms": 1116,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_77": {
+      "prompt_tokens": 685,
+      "completion_tokens": 30,
+      "total_tokens": 715,
+      "latency_ms": 988,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_76": {
+      "prompt_tokens": 685,
+      "completion_tokens": 38,
+      "total_tokens": 723,
+      "latency_ms": 1270,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_78": {
+      "prompt_tokens": 710,
+      "completion_tokens": 42,
+      "total_tokens": 752,
+      "latency_ms": 1186,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_79": {
+      "prompt_tokens": 680,
+      "completion_tokens": 37,
+      "total_tokens": 717,
+      "latency_ms": 1133,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_81": {
+      "prompt_tokens": 685,
+      "completion_tokens": 30,
+      "total_tokens": 715,
+      "latency_ms": 1002,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_83": {
+      "prompt_tokens": 680,
+      "completion_tokens": 30,
+      "total_tokens": 710,
+      "latency_ms": 1118,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_84": {
+      "prompt_tokens": 693,
+      "completion_tokens": 36,
+      "total_tokens": 729,
+      "latency_ms": 1022,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_82": {
+      "prompt_tokens": 679,
+      "completion_tokens": 40,
+      "total_tokens": 719,
+      "latency_ms": 1474,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_85": {
+      "prompt_tokens": 680,
+      "completion_tokens": 39,
+      "total_tokens": 719,
+      "latency_ms": 1348,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_80": {
+      "prompt_tokens": 682,
+      "completion_tokens": 35,
+      "total_tokens": 717,
+      "latency_ms": 2146,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_90": {
+      "prompt_tokens": 680,
+      "completion_tokens": 31,
+      "total_tokens": 711,
+      "latency_ms": 1042,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_89": {
+      "prompt_tokens": 679,
+      "completion_tokens": 32,
+      "total_tokens": 711,
+      "latency_ms": 1236,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_88": {
+      "prompt_tokens": 680,
+      "completion_tokens": 33,
+      "total_tokens": 713,
+      "latency_ms": 1494,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_87": {
+      "prompt_tokens": 683,
+      "completion_tokens": 32,
+      "total_tokens": 715,
+      "latency_ms": 2060,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_91": {
+      "prompt_tokens": 685,
+      "completion_tokens": 42,
+      "total_tokens": 727,
+      "latency_ms": 1299,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_86": {
+      "prompt_tokens": 682,
+      "completion_tokens": 41,
+      "total_tokens": 723,
+      "latency_ms": 2264,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_92": {
+      "prompt_tokens": 686,
+      "completion_tokens": 30,
+      "total_tokens": 716,
+      "latency_ms": 1193,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_93": {
+      "prompt_tokens": 689,
+      "completion_tokens": 40,
+      "total_tokens": 729,
+      "latency_ms": 1195,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_95": {
+      "prompt_tokens": 685,
+      "completion_tokens": 42,
+      "total_tokens": 727,
+      "latency_ms": 1122,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_94": {
+      "prompt_tokens": 681,
+      "completion_tokens": 36,
+      "total_tokens": 717,
+      "latency_ms": 1348,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_98": {
+      "prompt_tokens": 680,
+      "completion_tokens": 31,
+      "total_tokens": 711,
+      "latency_ms": 1116,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_97": {
+      "prompt_tokens": 685,
+      "completion_tokens": 30,
+      "total_tokens": 715,
+      "latency_ms": 1373,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_99": {
+      "prompt_tokens": 678,
+      "completion_tokens": 33,
+      "total_tokens": 711,
+      "latency_ms": 1281,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_100": {
+      "prompt_tokens": 678,
+      "completion_tokens": 38,
+      "total_tokens": 716,
+      "latency_ms": 1395,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_101": {
+      "prompt_tokens": 680,
+      "completion_tokens": 42,
+      "total_tokens": 722,
+      "latency_ms": 1242,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_102": {
+      "prompt_tokens": 679,
+      "completion_tokens": 37,
+      "total_tokens": 716,
+      "latency_ms": 1065,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_96": {
+      "prompt_tokens": 684,
+      "completion_tokens": 30,
+      "total_tokens": 714,
+      "latency_ms": 2250,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_103": {
+      "prompt_tokens": 682,
+      "completion_tokens": 32,
+      "total_tokens": 714,
+      "latency_ms": 1060,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_104": {
+      "prompt_tokens": 682,
+      "completion_tokens": 41,
+      "total_tokens": 723,
+      "latency_ms": 1194,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_105": {
+      "prompt_tokens": 691,
+      "completion_tokens": 46,
+      "total_tokens": 737,
+      "latency_ms": 1385,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_108": {
+      "prompt_tokens": 687,
+      "completion_tokens": 35,
+      "total_tokens": 722,
+      "latency_ms": 1028,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_106": {
+      "prompt_tokens": 682,
+      "completion_tokens": 39,
+      "total_tokens": 721,
+      "latency_ms": 1441,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_109": {
+      "prompt_tokens": 680,
+      "completion_tokens": 39,
+      "total_tokens": 719,
+      "latency_ms": 1164,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_111": {
+      "prompt_tokens": 683,
+      "completion_tokens": 32,
+      "total_tokens": 715,
+      "latency_ms": 973,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_107": {
+      "prompt_tokens": 679,
+      "completion_tokens": 39,
+      "total_tokens": 718,
+      "latency_ms": 1393,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_110": {
+      "prompt_tokens": 683,
+      "completion_tokens": 37,
+      "total_tokens": 720,
+      "latency_ms": 1030,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_112": {
+      "prompt_tokens": 684,
+      "completion_tokens": 32,
+      "total_tokens": 716,
+      "latency_ms": 1034,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_115": {
+      "prompt_tokens": 682,
+      "completion_tokens": 32,
+      "total_tokens": 714,
+      "latency_ms": 1027,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_119": {
+      "prompt_tokens": 680,
+      "completion_tokens": 32,
+      "total_tokens": 712,
+      "latency_ms": 1036,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_116": {
+      "prompt_tokens": 686,
+      "completion_tokens": 36,
+      "total_tokens": 722,
+      "latency_ms": 1098,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_113": {
+      "prompt_tokens": 679,
+      "completion_tokens": 30,
+      "total_tokens": 709,
+      "latency_ms": 1425,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_118": {
+      "prompt_tokens": 682,
+      "completion_tokens": 30,
+      "total_tokens": 712,
+      "latency_ms": 1192,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_114": {
+      "prompt_tokens": 681,
+      "completion_tokens": 40,
+      "total_tokens": 721,
+      "latency_ms": 1419,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_117": {
+      "prompt_tokens": 710,
+      "completion_tokens": 42,
+      "total_tokens": 752,
+      "latency_ms": 1345,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_120": {
+      "prompt_tokens": 683,
+      "completion_tokens": 36,
+      "total_tokens": 719,
+      "latency_ms": 1454,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_123": {
+      "prompt_tokens": 693,
+      "completion_tokens": 37,
+      "total_tokens": 730,
+      "latency_ms": 1041,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_121": {
+      "prompt_tokens": 684,
+      "completion_tokens": 33,
+      "total_tokens": 717,
+      "latency_ms": 1354,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_127": {
+      "prompt_tokens": 682,
+      "completion_tokens": 37,
+      "total_tokens": 719,
+      "latency_ms": 1050,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_125": {
+      "prompt_tokens": 688,
+      "completion_tokens": 39,
+      "total_tokens": 727,
+      "latency_ms": 1213,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_124": {
+      "prompt_tokens": 682,
+      "completion_tokens": 41,
+      "total_tokens": 723,
+      "latency_ms": 1235,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_122": {
+      "prompt_tokens": 684,
+      "completion_tokens": 40,
+      "total_tokens": 724,
+      "latency_ms": 1892,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_128": {
+      "prompt_tokens": 682,
+      "completion_tokens": 38,
+      "total_tokens": 720,
+      "latency_ms": 1134,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_126": {
+      "prompt_tokens": 687,
+      "completion_tokens": 36,
+      "total_tokens": 723,
+      "latency_ms": 1870,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_131": {
+      "prompt_tokens": 680,
+      "completion_tokens": 30,
+      "total_tokens": 710,
+      "latency_ms": 1053,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_129": {
+      "prompt_tokens": 680,
+      "completion_tokens": 30,
+      "total_tokens": 710,
+      "latency_ms": 1349,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_133": {
+      "prompt_tokens": 682,
+      "completion_tokens": 38,
+      "total_tokens": 720,
+      "latency_ms": 1029,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_130": {
+      "prompt_tokens": 684,
+      "completion_tokens": 30,
+      "total_tokens": 714,
+      "latency_ms": 1354,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_132": {
+      "prompt_tokens": 689,
+      "completion_tokens": 40,
+      "total_tokens": 729,
+      "latency_ms": 1301,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_134": {
+      "prompt_tokens": 681,
+      "completion_tokens": 32,
+      "total_tokens": 713,
+      "latency_ms": 1095,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_135": {
+      "prompt_tokens": 682,
+      "completion_tokens": 37,
+      "total_tokens": 719,
+      "latency_ms": 1149,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_136": {
+      "prompt_tokens": 680,
+      "completion_tokens": 30,
+      "total_tokens": 710,
+      "latency_ms": 1335,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_139": {
+      "prompt_tokens": 677,
+      "completion_tokens": 33,
+      "total_tokens": 710,
+      "latency_ms": 1071,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_137": {
+      "prompt_tokens": 685,
+      "completion_tokens": 36,
+      "total_tokens": 721,
+      "latency_ms": 1255,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_138": {
+      "prompt_tokens": 680,
+      "completion_tokens": 31,
+      "total_tokens": 711,
+      "latency_ms": 1561,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_141": {
+      "prompt_tokens": 683,
+      "completion_tokens": 36,
+      "total_tokens": 719,
+      "latency_ms": 1330,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_143": {
+      "prompt_tokens": 680,
+      "completion_tokens": 32,
+      "total_tokens": 712,
+      "latency_ms": 1321,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_145": {
+      "prompt_tokens": 679,
+      "completion_tokens": 32,
+      "total_tokens": 711,
+      "latency_ms": 976,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_146": {
+      "prompt_tokens": 683,
+      "completion_tokens": 34,
+      "total_tokens": 717,
+      "latency_ms": 990,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_144": {
+      "prompt_tokens": 691,
+      "completion_tokens": 50,
+      "total_tokens": 741,
+      "latency_ms": 1281,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_142": {
+      "prompt_tokens": 687,
+      "completion_tokens": 36,
+      "total_tokens": 723,
+      "latency_ms": 1709,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_140": {
+      "prompt_tokens": 683,
+      "completion_tokens": 34,
+      "total_tokens": 717,
+      "latency_ms": 2251,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_148": {
+      "prompt_tokens": 686,
+      "completion_tokens": 30,
+      "total_tokens": 716,
+      "latency_ms": 997,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_149": {
+      "prompt_tokens": 682,
+      "completion_tokens": 36,
+      "total_tokens": 718,
+      "latency_ms": 1176,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_147": {
+      "prompt_tokens": 687,
+      "completion_tokens": 35,
+      "total_tokens": 722,
+      "latency_ms": 1614,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_151": {
+      "prompt_tokens": 683,
+      "completion_tokens": 31,
+      "total_tokens": 714,
+      "latency_ms": 1075,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_152": {
+      "prompt_tokens": 682,
+      "completion_tokens": 37,
+      "total_tokens": 719,
+      "latency_ms": 1126,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_153": {
+      "prompt_tokens": 682,
+      "completion_tokens": 38,
+      "total_tokens": 720,
+      "latency_ms": 1109,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_150": {
+      "prompt_tokens": 679,
+      "completion_tokens": 41,
+      "total_tokens": 720,
+      "latency_ms": 1792,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_155": {
+      "prompt_tokens": 681,
+      "completion_tokens": 31,
+      "total_tokens": 712,
+      "latency_ms": 1364,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_154": {
+      "prompt_tokens": 684,
+      "completion_tokens": 41,
+      "total_tokens": 725,
+      "latency_ms": 1879,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_157": {
+      "prompt_tokens": 678,
+      "completion_tokens": 30,
+      "total_tokens": 708,
+      "latency_ms": 1187,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_156": {
+      "prompt_tokens": 710,
+      "completion_tokens": 42,
+      "total_tokens": 752,
+      "latency_ms": 1238,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_159": {
+      "prompt_tokens": 683,
+      "completion_tokens": 34,
+      "total_tokens": 717,
+      "latency_ms": 1070,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_158": {
+      "prompt_tokens": 683,
+      "completion_tokens": 30,
+      "total_tokens": 713,
+      "latency_ms": 1232,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_160": {
+      "prompt_tokens": 683,
+      "completion_tokens": 43,
+      "total_tokens": 726,
+      "latency_ms": 1533,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_162": {
+      "prompt_tokens": 693,
+      "completion_tokens": 36,
+      "total_tokens": 729,
+      "latency_ms": 989,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_161": {
+      "prompt_tokens": 678,
+      "completion_tokens": 42,
+      "total_tokens": 720,
+      "latency_ms": 1285,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_163": {
+      "prompt_tokens": 680,
+      "completion_tokens": 36,
+      "total_tokens": 716,
+      "latency_ms": 1132,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_166": {
+      "prompt_tokens": 682,
+      "completion_tokens": 37,
+      "total_tokens": 719,
+      "latency_ms": 1128,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_165": {
+      "prompt_tokens": 679,
+      "completion_tokens": 34,
+      "total_tokens": 713,
+      "latency_ms": 1201,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_164": {
+      "prompt_tokens": 682,
+      "completion_tokens": 38,
+      "total_tokens": 720,
+      "latency_ms": 1290,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_167": {
+      "prompt_tokens": 682,
+      "completion_tokens": 38,
+      "total_tokens": 720,
+      "latency_ms": 1540,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_168": {
+      "prompt_tokens": 686,
+      "completion_tokens": 35,
+      "total_tokens": 721,
+      "latency_ms": 1240,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_169": {
+      "prompt_tokens": 680,
+      "completion_tokens": 40,
+      "total_tokens": 720,
+      "latency_ms": 1272,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_171": {
+      "prompt_tokens": 689,
+      "completion_tokens": 40,
+      "total_tokens": 729,
+      "latency_ms": 1174,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_170": {
+      "prompt_tokens": 677,
+      "completion_tokens": 30,
+      "total_tokens": 707,
+      "latency_ms": 1550,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_172": {
+      "prompt_tokens": 684,
+      "completion_tokens": 44,
+      "total_tokens": 728,
+      "latency_ms": 1213,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_173": {
+      "prompt_tokens": 683,
+      "completion_tokens": 32,
+      "total_tokens": 715,
+      "latency_ms": 1266,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_175": {
+      "prompt_tokens": 677,
+      "completion_tokens": 33,
+      "total_tokens": 710,
+      "latency_ms": 1055,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_174": {
+      "prompt_tokens": 681,
+      "completion_tokens": 39,
+      "total_tokens": 720,
+      "latency_ms": 1497,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_176": {
+      "prompt_tokens": 681,
+      "completion_tokens": 27,
+      "total_tokens": 708,
+      "latency_ms": 997,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_177": {
+      "prompt_tokens": 678,
+      "completion_tokens": 40,
+      "total_tokens": 718,
+      "latency_ms": 1081,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_178": {
+      "prompt_tokens": 678,
+      "completion_tokens": 41,
+      "total_tokens": 719,
+      "latency_ms": 1335,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_179": {
+      "prompt_tokens": 684,
+      "completion_tokens": 31,
+      "total_tokens": 715,
+      "latency_ms": 1488,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_182": {
+      "prompt_tokens": 685,
+      "completion_tokens": 37,
+      "total_tokens": 722,
+      "latency_ms": 1099,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_180": {
+      "prompt_tokens": 678,
+      "completion_tokens": 34,
+      "total_tokens": 712,
+      "latency_ms": 1500,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_185": {
+      "prompt_tokens": 684,
+      "completion_tokens": 30,
+      "total_tokens": 714,
+      "latency_ms": 1038,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_181": {
+      "prompt_tokens": 679,
+      "completion_tokens": 37,
+      "total_tokens": 716,
+      "latency_ms": 1495,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_184": {
+      "prompt_tokens": 680,
+      "completion_tokens": 37,
+      "total_tokens": 717,
+      "latency_ms": 1222,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_183": {
+      "prompt_tokens": 691,
+      "completion_tokens": 49,
+      "total_tokens": 740,
+      "latency_ms": 1669,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_186": {
+      "prompt_tokens": 687,
+      "completion_tokens": 35,
+      "total_tokens": 722,
+      "latency_ms": 1113,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_188": {
+      "prompt_tokens": 681,
+      "completion_tokens": 33,
+      "total_tokens": 714,
+      "latency_ms": 990,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_189": {
+      "prompt_tokens": 681,
+      "completion_tokens": 32,
+      "total_tokens": 713,
+      "latency_ms": 1199,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_191": {
+      "prompt_tokens": 682,
+      "completion_tokens": 30,
+      "total_tokens": 712,
+      "latency_ms": 1177,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_192": {
+      "prompt_tokens": 682,
+      "completion_tokens": 33,
+      "total_tokens": 715,
+      "latency_ms": 1174,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_187": {
+      "prompt_tokens": 680,
+      "completion_tokens": 33,
+      "total_tokens": 713,
+      "latency_ms": 1582,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_193": {
+      "prompt_tokens": 686,
+      "completion_tokens": 30,
+      "total_tokens": 716,
+      "latency_ms": 978,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_190": {
+      "prompt_tokens": 684,
+      "completion_tokens": 33,
+      "total_tokens": 717,
+      "latency_ms": 1616,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_194": {
+      "prompt_tokens": 680,
+      "completion_tokens": 33,
+      "total_tokens": 713,
+      "latency_ms": 1280,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_195": {
+      "prompt_tokens": 710,
+      "completion_tokens": 42,
+      "total_tokens": 752,
+      "latency_ms": 1119,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_196": {
+      "prompt_tokens": 681,
+      "completion_tokens": 36,
+      "total_tokens": 717,
+      "latency_ms": 1155,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_198": {
+      "prompt_tokens": 685,
+      "completion_tokens": 30,
+      "total_tokens": 715,
+      "latency_ms": 1356,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_200": {
+      "prompt_tokens": 683,
+      "completion_tokens": 30,
+      "total_tokens": 713,
+      "latency_ms": 1140,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_197": {
+      "prompt_tokens": 682,
+      "completion_tokens": 39,
+      "total_tokens": 721,
+      "latency_ms": 1545,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_201": {
+      "prompt_tokens": 693,
+      "completion_tokens": 36,
+      "total_tokens": 729,
+      "latency_ms": 1264,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_199": {
+      "prompt_tokens": 681,
+      "completion_tokens": 35,
+      "total_tokens": 716,
+      "latency_ms": 1502,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_203": {
+      "prompt_tokens": 682,
+      "completion_tokens": 34,
+      "total_tokens": 716,
+      "latency_ms": 1434,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_205": {
+      "prompt_tokens": 682,
+      "completion_tokens": 32,
+      "total_tokens": 714,
+      "latency_ms": 1056,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_204": {
+      "prompt_tokens": 684,
+      "completion_tokens": 38,
+      "total_tokens": 722,
+      "latency_ms": 1656,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_206": {
+      "prompt_tokens": 681,
+      "completion_tokens": 36,
+      "total_tokens": 717,
+      "latency_ms": 1398,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_208": {
+      "prompt_tokens": 684,
+      "completion_tokens": 31,
+      "total_tokens": 715,
+      "latency_ms": 1143,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_202": {
+      "prompt_tokens": 683,
+      "completion_tokens": 38,
+      "total_tokens": 721,
+      "latency_ms": 2116,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_209": {
+      "prompt_tokens": 680,
+      "completion_tokens": 37,
+      "total_tokens": 717,
+      "latency_ms": 1254,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_207": {
+      "prompt_tokens": 682,
+      "completion_tokens": 41,
+      "total_tokens": 723,
+      "latency_ms": 1452,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_211": {
+      "prompt_tokens": 682,
+      "completion_tokens": 34,
+      "total_tokens": 716,
+      "latency_ms": 1162,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_214": {
+      "prompt_tokens": 676,
+      "completion_tokens": 30,
+      "total_tokens": 706,
+      "latency_ms": 971,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_212": {
+      "prompt_tokens": 679,
+      "completion_tokens": 32,
+      "total_tokens": 711,
+      "latency_ms": 1145,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_215": {
+      "prompt_tokens": 681,
+      "completion_tokens": 32,
+      "total_tokens": 713,
+      "latency_ms": 1075,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_213": {
+      "prompt_tokens": 680,
+      "completion_tokens": 30,
+      "total_tokens": 710,
+      "latency_ms": 1250,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_210": {
+      "prompt_tokens": 689,
+      "completion_tokens": 40,
+      "total_tokens": 729,
+      "latency_ms": 1833,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_217": {
+      "prompt_tokens": 677,
+      "completion_tokens": 33,
+      "total_tokens": 710,
+      "latency_ms": 1064,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_216": {
+      "prompt_tokens": 683,
+      "completion_tokens": 43,
+      "total_tokens": 726,
+      "latency_ms": 1229,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_218": {
+      "prompt_tokens": 683,
+      "completion_tokens": 41,
+      "total_tokens": 724,
+      "latency_ms": 1033,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_219": {
+      "prompt_tokens": 679,
+      "completion_tokens": 32,
+      "total_tokens": 711,
+      "latency_ms": 1198,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_224": {
+      "prompt_tokens": 678,
+      "completion_tokens": 36,
+      "total_tokens": 714,
+      "latency_ms": 1135,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_223": {
+      "prompt_tokens": 677,
+      "completion_tokens": 44,
+      "total_tokens": 721,
+      "latency_ms": 1158,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_222": {
+      "prompt_tokens": 691,
+      "completion_tokens": 49,
+      "total_tokens": 740,
+      "latency_ms": 1213,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_225": {
+      "prompt_tokens": 687,
+      "completion_tokens": 35,
+      "total_tokens": 722,
+      "latency_ms": 1173,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_221": {
+      "prompt_tokens": 683,
+      "completion_tokens": 33,
+      "total_tokens": 716,
+      "latency_ms": 1612,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_220": {
+      "prompt_tokens": 688,
+      "completion_tokens": 41,
+      "total_tokens": 729,
+      "latency_ms": 1661,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_226": {
+      "prompt_tokens": 685,
+      "completion_tokens": 40,
+      "total_tokens": 725,
+      "latency_ms": 1179,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_229": {
+      "prompt_tokens": 678,
+      "completion_tokens": 30,
+      "total_tokens": 708,
+      "latency_ms": 1039,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_230": {
+      "prompt_tokens": 683,
+      "completion_tokens": 31,
+      "total_tokens": 714,
+      "latency_ms": 1056,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_228": {
+      "prompt_tokens": 677,
+      "completion_tokens": 33,
+      "total_tokens": 710,
+      "latency_ms": 1233,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_233": {
+      "prompt_tokens": 684,
+      "completion_tokens": 30,
+      "total_tokens": 714,
+      "latency_ms": 1049,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_227": {
+      "prompt_tokens": 681,
+      "completion_tokens": 40,
+      "total_tokens": 721,
+      "latency_ms": 1659,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_232": {
+      "prompt_tokens": 679,
+      "completion_tokens": 39,
+      "total_tokens": 718,
+      "latency_ms": 1254,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_234": {
+      "prompt_tokens": 710,
+      "completion_tokens": 42,
+      "total_tokens": 752,
+      "latency_ms": 1375,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_231": {
+      "prompt_tokens": 682,
+      "completion_tokens": 31,
+      "total_tokens": 713,
+      "latency_ms": 2046,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_236": {
+      "prompt_tokens": 680,
+      "completion_tokens": 32,
+      "total_tokens": 712,
+      "latency_ms": 1127,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_235": {
+      "prompt_tokens": 678,
+      "completion_tokens": 39,
+      "total_tokens": 717,
+      "latency_ms": 1422,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_237": {
+      "prompt_tokens": 682,
+      "completion_tokens": 39,
+      "total_tokens": 721,
+      "latency_ms": 1360,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_238": {
+      "prompt_tokens": 682,
+      "completion_tokens": 38,
+      "total_tokens": 720,
+      "latency_ms": 1249,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_240": {
+      "prompt_tokens": 693,
+      "completion_tokens": 36,
+      "total_tokens": 729,
+      "latency_ms": 1167,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_239": {
+      "prompt_tokens": 680,
+      "completion_tokens": 34,
+      "total_tokens": 714,
+      "latency_ms": 1578,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_241": {
+      "prompt_tokens": 682,
+      "completion_tokens": 30,
+      "total_tokens": 712,
+      "latency_ms": 1432,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_244": {
+      "prompt_tokens": 683,
+      "completion_tokens": 32,
+      "total_tokens": 715,
+      "latency_ms": 1017,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_245": {
+      "prompt_tokens": 686,
+      "completion_tokens": 30,
+      "total_tokens": 716,
+      "latency_ms": 976,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_243": {
+      "prompt_tokens": 677,
+      "completion_tokens": 36,
+      "total_tokens": 713,
+      "latency_ms": 1375,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_246": {
+      "prompt_tokens": 684,
+      "completion_tokens": 36,
+      "total_tokens": 720,
+      "latency_ms": 1143,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_242": {
+      "prompt_tokens": 680,
+      "completion_tokens": 35,
+      "total_tokens": 715,
+      "latency_ms": 1805,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_248": {
+      "prompt_tokens": 685,
+      "completion_tokens": 37,
+      "total_tokens": 722,
+      "latency_ms": 1190,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_247": {
+      "prompt_tokens": 682,
+      "completion_tokens": 38,
+      "total_tokens": 720,
+      "latency_ms": 1497,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_250": {
+      "prompt_tokens": 678,
+      "completion_tokens": 36,
+      "total_tokens": 714,
+      "latency_ms": 1154,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_251": {
+      "prompt_tokens": 678,
+      "completion_tokens": 32,
+      "total_tokens": 710,
+      "latency_ms": 1103,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_252": {
+      "prompt_tokens": 681,
+      "completion_tokens": 40,
+      "total_tokens": 721,
+      "latency_ms": 1243,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_253": {
+      "prompt_tokens": 684,
+      "completion_tokens": 39,
+      "total_tokens": 723,
+      "latency_ms": 1307,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_256": {
+      "prompt_tokens": 683,
+      "completion_tokens": 43,
+      "total_tokens": 726,
+      "latency_ms": 1110,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_249": {
+      "prompt_tokens": 689,
+      "completion_tokens": 40,
+      "total_tokens": 729,
+      "latency_ms": 2101,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_254": {
+      "prompt_tokens": 683,
+      "completion_tokens": 36,
+      "total_tokens": 719,
+      "latency_ms": 1575,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_255": {
+      "prompt_tokens": 682,
+      "completion_tokens": 32,
+      "total_tokens": 714,
+      "latency_ms": 1502,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_257": {
+      "prompt_tokens": 684,
+      "completion_tokens": 35,
+      "total_tokens": 719,
+      "latency_ms": 1261,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_259": {
+      "prompt_tokens": 687,
+      "completion_tokens": 36,
+      "total_tokens": 723,
+      "latency_ms": 1118,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_258": {
+      "prompt_tokens": 683,
+      "completion_tokens": 33,
+      "total_tokens": 716,
+      "latency_ms": 1302,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_260": {
+      "prompt_tokens": 681,
+      "completion_tokens": 35,
+      "total_tokens": 716,
+      "latency_ms": 1267,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_261": {
+      "prompt_tokens": 691,
+      "completion_tokens": 50,
+      "total_tokens": 741,
+      "latency_ms": 1241,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_262": {
+      "prompt_tokens": 682,
+      "completion_tokens": 32,
+      "total_tokens": 714,
+      "latency_ms": 1116,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_264": {
+      "prompt_tokens": 687,
+      "completion_tokens": 35,
+      "total_tokens": 722,
+      "latency_ms": 1054,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_267": {
+      "prompt_tokens": 686,
+      "completion_tokens": 36,
+      "total_tokens": 722,
+      "latency_ms": 942,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_263": {
+      "prompt_tokens": 683,
+      "completion_tokens": 42,
+      "total_tokens": 725,
+      "latency_ms": 1373,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_265": {
+      "prompt_tokens": 679,
+      "completion_tokens": 40,
+      "total_tokens": 719,
+      "latency_ms": 1089,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_266": {
+      "prompt_tokens": 678,
+      "completion_tokens": 36,
+      "total_tokens": 714,
+      "latency_ms": 1113,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_268": {
+      "prompt_tokens": 683,
+      "completion_tokens": 38,
+      "total_tokens": 721,
+      "latency_ms": 1253,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_269": {
+      "prompt_tokens": 687,
+      "completion_tokens": 34,
+      "total_tokens": 721,
+      "latency_ms": 1087,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_270": {
+      "prompt_tokens": 681,
+      "completion_tokens": 40,
+      "total_tokens": 721,
+      "latency_ms": 1079,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_271": {
+      "prompt_tokens": 683,
+      "completion_tokens": 30,
+      "total_tokens": 713,
+      "latency_ms": 1155,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_273": {
+      "prompt_tokens": 710,
+      "completion_tokens": 42,
+      "total_tokens": 752,
+      "latency_ms": 1362,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_272": {
+      "prompt_tokens": 682,
+      "completion_tokens": 30,
+      "total_tokens": 712,
+      "latency_ms": 1396,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_275": {
+      "prompt_tokens": 678,
+      "completion_tokens": 43,
+      "total_tokens": 721,
+      "latency_ms": 1471,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_278": {
+      "prompt_tokens": 680,
+      "completion_tokens": 33,
+      "total_tokens": 713,
+      "latency_ms": 1097,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_276": {
+      "prompt_tokens": 683,
+      "completion_tokens": 36,
+      "total_tokens": 719,
+      "latency_ms": 1202,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_279": {
+      "prompt_tokens": 693,
+      "completion_tokens": 36,
+      "total_tokens": 729,
+      "latency_ms": 1048,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_274": {
+      "prompt_tokens": 680,
+      "completion_tokens": 43,
+      "total_tokens": 723,
+      "latency_ms": 2137,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_280": {
+      "prompt_tokens": 683,
+      "completion_tokens": 41,
+      "total_tokens": 724,
+      "latency_ms": 1099,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_277": {
+      "prompt_tokens": 684,
+      "completion_tokens": 37,
+      "total_tokens": 721,
+      "latency_ms": 1853,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_283": {
+      "prompt_tokens": 680,
+      "completion_tokens": 30,
+      "total_tokens": 710,
+      "latency_ms": 948,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_282": {
+      "prompt_tokens": 682,
+      "completion_tokens": 45,
+      "total_tokens": 727,
+      "latency_ms": 1327,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_281": {
+      "prompt_tokens": 679,
+      "completion_tokens": 31,
+      "total_tokens": 710,
+      "latency_ms": 1647,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_285": {
+      "prompt_tokens": 678,
+      "completion_tokens": 32,
+      "total_tokens": 710,
+      "latency_ms": 1074,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_284": {
+      "prompt_tokens": 678,
+      "completion_tokens": 42,
+      "total_tokens": 720,
+      "latency_ms": 1260,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_286": {
+      "prompt_tokens": 682,
+      "completion_tokens": 43,
+      "total_tokens": 725,
+      "latency_ms": 1164,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_287": {
+      "prompt_tokens": 681,
+      "completion_tokens": 30,
+      "total_tokens": 711,
+      "latency_ms": 1116,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_290": {
+      "prompt_tokens": 683,
+      "completion_tokens": 30,
+      "total_tokens": 713,
+      "latency_ms": 1016,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_288": {
+      "prompt_tokens": 689,
+      "completion_tokens": 40,
+      "total_tokens": 729,
+      "latency_ms": 1456,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_292": {
+      "prompt_tokens": 682,
+      "completion_tokens": 42,
+      "total_tokens": 724,
+      "latency_ms": 1092,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_289": {
+      "prompt_tokens": 681,
+      "completion_tokens": 38,
+      "total_tokens": 719,
+      "latency_ms": 1447,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_291": {
+      "prompt_tokens": 684,
+      "completion_tokens": 37,
+      "total_tokens": 721,
+      "latency_ms": 1382,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_293": {
+      "prompt_tokens": 682,
+      "completion_tokens": 38,
+      "total_tokens": 720,
+      "latency_ms": 1303,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_294": {
+      "prompt_tokens": 678,
+      "completion_tokens": 34,
+      "total_tokens": 712,
+      "latency_ms": 1233,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_295": {
+      "prompt_tokens": 681,
+      "completion_tokens": 27,
+      "total_tokens": 708,
+      "latency_ms": 1143,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_296": {
+      "prompt_tokens": 676,
+      "completion_tokens": 30,
+      "total_tokens": 706,
+      "latency_ms": 1169,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_297": {
+      "prompt_tokens": 680,
+      "completion_tokens": 34,
+      "total_tokens": 714,
+      "latency_ms": 1199,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_298": {
+      "prompt_tokens": 680,
+      "completion_tokens": 47,
+      "total_tokens": 727,
+      "latency_ms": 1172,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_299": {
+      "prompt_tokens": 679,
+      "completion_tokens": 32,
+      "total_tokens": 711,
+      "latency_ms": 1107,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_301": {
+      "prompt_tokens": 685,
+      "completion_tokens": 33,
+      "total_tokens": 718,
+      "latency_ms": 1205,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_300": {
+      "prompt_tokens": 691,
+      "completion_tokens": 50,
+      "total_tokens": 741,
+      "latency_ms": 1230,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_303": {
+      "prompt_tokens": 687,
+      "completion_tokens": 35,
+      "total_tokens": 722,
+      "latency_ms": 1155,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_302": {
+      "prompt_tokens": 681,
+      "completion_tokens": 47,
+      "total_tokens": 728,
+      "latency_ms": 1351,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_306": {
+      "prompt_tokens": 680,
+      "completion_tokens": 31,
+      "total_tokens": 711,
+      "latency_ms": 1057,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_305": {
+      "prompt_tokens": 679,
+      "completion_tokens": 34,
+      "total_tokens": 713,
+      "latency_ms": 1187,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_307": {
+      "prompt_tokens": 685,
+      "completion_tokens": 41,
+      "total_tokens": 726,
+      "latency_ms": 1144,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_304": {
+      "prompt_tokens": 684,
+      "completion_tokens": 32,
+      "total_tokens": 716,
+      "latency_ms": 1459,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_308": {
+      "prompt_tokens": 682,
+      "completion_tokens": 36,
+      "total_tokens": 718,
+      "latency_ms": 1180,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_309": {
+      "prompt_tokens": 682,
+      "completion_tokens": 45,
+      "total_tokens": 727,
+      "latency_ms": 1297,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_310": {
+      "prompt_tokens": 679,
+      "completion_tokens": 30,
+      "total_tokens": 709,
+      "latency_ms": 1101,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_311": {
+      "prompt_tokens": 686,
+      "completion_tokens": 36,
+      "total_tokens": 722,
+      "latency_ms": 1163,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_312": {
+      "prompt_tokens": 710,
+      "completion_tokens": 42,
+      "total_tokens": 752,
+      "latency_ms": 1252,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_313": {
+      "prompt_tokens": 686,
+      "completion_tokens": 32,
+      "total_tokens": 718,
+      "latency_ms": 1232,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_315": {
+      "prompt_tokens": 680,
+      "completion_tokens": 30,
+      "total_tokens": 710,
+      "latency_ms": 1173,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_316": {
+      "prompt_tokens": 680,
+      "completion_tokens": 32,
+      "total_tokens": 712,
+      "latency_ms": 1102,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_314": {
+      "prompt_tokens": 683,
+      "completion_tokens": 45,
+      "total_tokens": 728,
+      "latency_ms": 1565,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_317": {
+      "prompt_tokens": 685,
+      "completion_tokens": 33,
+      "total_tokens": 718,
+      "latency_ms": 1149,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_319": {
+      "prompt_tokens": 683,
+      "completion_tokens": 39,
+      "total_tokens": 722,
+      "latency_ms": 1163,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_321": {
+      "prompt_tokens": 681,
+      "completion_tokens": 32,
+      "total_tokens": 713,
+      "latency_ms": 1166,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_320": {
+      "prompt_tokens": 681,
+      "completion_tokens": 35,
+      "total_tokens": 716,
+      "latency_ms": 1319,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_326": {
+      "prompt_tokens": 678,
+      "completion_tokens": 42,
+      "total_tokens": 720,
+      "latency_ms": 1120,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_324": {
+      "prompt_tokens": 683,
+      "completion_tokens": 31,
+      "total_tokens": 714,
+      "latency_ms": 1334,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_323": {
+      "prompt_tokens": 681,
+      "completion_tokens": 39,
+      "total_tokens": 720,
+      "latency_ms": 1477,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_322": {
+      "prompt_tokens": 684,
+      "completion_tokens": 38,
+      "total_tokens": 722,
+      "latency_ms": 1656,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_327": {
+      "prompt_tokens": 689,
+      "completion_tokens": 40,
+      "total_tokens": 729,
+      "latency_ms": 1199,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_318": {
+      "prompt_tokens": 693,
+      "completion_tokens": 36,
+      "total_tokens": 729,
+      "latency_ms": 1148,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_325": {
+      "prompt_tokens": 684,
+      "completion_tokens": 36,
+      "total_tokens": 720,
+      "latency_ms": 2014,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_329": {
+      "prompt_tokens": 682,
+      "completion_tokens": 37,
+      "total_tokens": 719,
+      "latency_ms": 968,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_330": {
+      "prompt_tokens": 681,
+      "completion_tokens": 34,
+      "total_tokens": 715,
+      "latency_ms": 1127,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_332": {
+      "prompt_tokens": 684,
+      "completion_tokens": 42,
+      "total_tokens": 726,
+      "latency_ms": 1283,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_333": {
+      "prompt_tokens": 683,
+      "completion_tokens": 30,
+      "total_tokens": 713,
+      "latency_ms": 1219,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_336": {
+      "prompt_tokens": 680,
+      "completion_tokens": 31,
+      "total_tokens": 711,
+      "latency_ms": 1069,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_334": {
+      "prompt_tokens": 685,
+      "completion_tokens": 30,
+      "total_tokens": 715,
+      "latency_ms": 1477,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_335": {
+      "prompt_tokens": 682,
+      "completion_tokens": 36,
+      "total_tokens": 718,
+      "latency_ms": 1545,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_337": {
+      "prompt_tokens": 685,
+      "completion_tokens": 30,
+      "total_tokens": 715,
+      "latency_ms": 1070,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_338": {
+      "prompt_tokens": 680,
+      "completion_tokens": 32,
+      "total_tokens": 712,
+      "latency_ms": 1082,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_331": {
+      "prompt_tokens": 682,
+      "completion_tokens": 31,
+      "total_tokens": 713,
+      "latency_ms": 1060,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_339": {
+      "prompt_tokens": 691,
+      "completion_tokens": 50,
+      "total_tokens": 741,
+      "latency_ms": 1277,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_340": {
+      "prompt_tokens": 685,
+      "completion_tokens": 37,
+      "total_tokens": 722,
+      "latency_ms": 1181,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_342": {
+      "prompt_tokens": 687,
+      "completion_tokens": 35,
+      "total_tokens": 722,
+      "latency_ms": 962,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_344": {
+      "prompt_tokens": 683,
+      "completion_tokens": 30,
+      "total_tokens": 713,
+      "latency_ms": 1161,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_341": {
+      "prompt_tokens": 684,
+      "completion_tokens": 29,
+      "total_tokens": 713,
+      "latency_ms": 1589,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_345": {
+      "prompt_tokens": 681,
+      "completion_tokens": 34,
+      "total_tokens": 715,
+      "latency_ms": 1071,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_346": {
+      "prompt_tokens": 678,
+      "completion_tokens": 33,
+      "total_tokens": 711,
+      "latency_ms": 1136,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_347": {
+      "prompt_tokens": 679,
+      "completion_tokens": 38,
+      "total_tokens": 717,
+      "latency_ms": 1257,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_349": {
+      "prompt_tokens": 685,
+      "completion_tokens": 34,
+      "total_tokens": 719,
+      "latency_ms": 1091,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_350": {
+      "prompt_tokens": 682,
+      "completion_tokens": 34,
+      "total_tokens": 716,
+      "latency_ms": 1329,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_351": {
+      "prompt_tokens": 710,
+      "completion_tokens": 42,
+      "total_tokens": 752,
+      "latency_ms": 1189,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_328": {
+      "prompt_tokens": 675,
+      "completion_tokens": 30,
+      "total_tokens": 705,
+      "latency_ms": 1136,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_352": {
+      "prompt_tokens": 683,
+      "completion_tokens": 37,
+      "total_tokens": 720,
+      "latency_ms": 1336,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_354": {
+      "prompt_tokens": 681,
+      "completion_tokens": 34,
+      "total_tokens": 715,
+      "latency_ms": 999,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_348": {
+      "prompt_tokens": 680,
+      "completion_tokens": 32,
+      "total_tokens": 712,
+      "latency_ms": 1119,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_355": {
+      "prompt_tokens": 681,
+      "completion_tokens": 41,
+      "total_tokens": 722,
+      "latency_ms": 1126,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_358": {
+      "prompt_tokens": 679,
+      "completion_tokens": 41,
+      "total_tokens": 720,
+      "latency_ms": 1206,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_359": {
+      "prompt_tokens": 682,
+      "completion_tokens": 40,
+      "total_tokens": 722,
+      "latency_ms": 1189,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_360": {
+      "prompt_tokens": 685,
+      "completion_tokens": 34,
+      "total_tokens": 719,
+      "latency_ms": 1108,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_357": {
+      "prompt_tokens": 693,
+      "completion_tokens": 36,
+      "total_tokens": 729,
+      "latency_ms": 1720,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_361": {
+      "prompt_tokens": 682,
+      "completion_tokens": 33,
+      "total_tokens": 715,
+      "latency_ms": 1683,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_362": {
+      "prompt_tokens": 680,
+      "completion_tokens": 37,
+      "total_tokens": 717,
+      "latency_ms": 1092,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_356": {
+      "prompt_tokens": 683,
+      "completion_tokens": 33,
+      "total_tokens": 716,
+      "latency_ms": 1270,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_364": {
+      "prompt_tokens": 679,
+      "completion_tokens": 32,
+      "total_tokens": 711,
+      "latency_ms": 1119,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_365": {
+      "prompt_tokens": 681,
+      "completion_tokens": 30,
+      "total_tokens": 711,
+      "latency_ms": 1022,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_366": {
+      "prompt_tokens": 689,
+      "completion_tokens": 40,
+      "total_tokens": 729,
+      "latency_ms": 1186,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_368": {
+      "prompt_tokens": 679,
+      "completion_tokens": 31,
+      "total_tokens": 710,
+      "latency_ms": 1144,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_369": {
+      "prompt_tokens": 681,
+      "completion_tokens": 38,
+      "total_tokens": 719,
+      "latency_ms": 1031,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_367": {
+      "prompt_tokens": 681,
+      "completion_tokens": 33,
+      "total_tokens": 714,
+      "latency_ms": 1361,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_370": {
+      "prompt_tokens": 680,
+      "completion_tokens": 30,
+      "total_tokens": 710,
+      "latency_ms": 1134,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_363": {
+      "prompt_tokens": 683,
+      "completion_tokens": 30,
+      "total_tokens": 713,
+      "latency_ms": 976,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_372": {
+      "prompt_tokens": 682,
+      "completion_tokens": 40,
+      "total_tokens": 722,
+      "latency_ms": 1028,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_374": {
+      "prompt_tokens": 681,
+      "completion_tokens": 30,
+      "total_tokens": 711,
+      "latency_ms": 1080,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_373": {
+      "prompt_tokens": 682,
+      "completion_tokens": 33,
+      "total_tokens": 715,
+      "latency_ms": 1172,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_376": {
+      "prompt_tokens": 686,
+      "completion_tokens": 30,
+      "total_tokens": 716,
+      "latency_ms": 1036,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_377": {
+      "prompt_tokens": 682,
+      "completion_tokens": 39,
+      "total_tokens": 721,
+      "latency_ms": 1168,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_380": {
+      "prompt_tokens": 682,
+      "completion_tokens": 33,
+      "total_tokens": 715,
+      "latency_ms": 1054,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_378": {
+      "prompt_tokens": 691,
+      "completion_tokens": 51,
+      "total_tokens": 742,
+      "latency_ms": 1471,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_371": {
+      "prompt_tokens": 680,
+      "completion_tokens": 31,
+      "total_tokens": 711,
+      "latency_ms": 1397,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_379": {
+      "prompt_tokens": 680,
+      "completion_tokens": 30,
+      "total_tokens": 710,
+      "latency_ms": 1937,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_375": {
+      "prompt_tokens": 681,
+      "completion_tokens": 30,
+      "total_tokens": 711,
+      "latency_ms": 1547,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_381": {
+      "prompt_tokens": 687,
+      "completion_tokens": 35,
+      "total_tokens": 722,
+      "latency_ms": 1464,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_383": {
+      "prompt_tokens": 685,
+      "completion_tokens": 37,
+      "total_tokens": 722,
+      "latency_ms": 1209,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_382": {
+      "prompt_tokens": 677,
+      "completion_tokens": 39,
+      "total_tokens": 716,
+      "latency_ms": 1499,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_386": {
+      "prompt_tokens": 683,
+      "completion_tokens": 34,
+      "total_tokens": 717,
+      "latency_ms": 1172,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_387": {
+      "prompt_tokens": 681,
+      "completion_tokens": 40,
+      "total_tokens": 721,
+      "latency_ms": 1248,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_388": {
+      "prompt_tokens": 680,
+      "completion_tokens": 33,
+      "total_tokens": 713,
+      "latency_ms": 1177,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_389": {
+      "prompt_tokens": 683,
+      "completion_tokens": 33,
+      "total_tokens": 716,
+      "latency_ms": 1453,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_384": {
+      "prompt_tokens": 678,
+      "completion_tokens": 33,
+      "total_tokens": 711,
+      "latency_ms": 1218,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_392": {
+      "prompt_tokens": 679,
+      "completion_tokens": 34,
+      "total_tokens": 713,
+      "latency_ms": 1057,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_393": {
+      "prompt_tokens": 680,
+      "completion_tokens": 33,
+      "total_tokens": 713,
+      "latency_ms": 1164,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_394": {
+      "prompt_tokens": 679,
+      "completion_tokens": 31,
+      "total_tokens": 710,
+      "latency_ms": 1044,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_395": {
+      "prompt_tokens": 680,
+      "completion_tokens": 30,
+      "total_tokens": 710,
+      "latency_ms": 1143,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_396": {
+      "prompt_tokens": 693,
+      "completion_tokens": 36,
+      "total_tokens": 729,
+      "latency_ms": 1038,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_398": {
+      "prompt_tokens": 680,
+      "completion_tokens": 30,
+      "total_tokens": 710,
+      "latency_ms": 1302,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_390": {
+      "prompt_tokens": 710,
+      "completion_tokens": 42,
+      "total_tokens": 752,
+      "latency_ms": 1534,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_400": {
+      "prompt_tokens": 680,
+      "completion_tokens": 30,
+      "total_tokens": 710,
+      "latency_ms": 1026,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_401": {
+      "prompt_tokens": 682,
+      "completion_tokens": 38,
+      "total_tokens": 720,
+      "latency_ms": 1055,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_402": {
+      "prompt_tokens": 681,
+      "completion_tokens": 41,
+      "total_tokens": 722,
+      "latency_ms": 1127,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_385": {
+      "prompt_tokens": 682,
+      "completion_tokens": 40,
+      "total_tokens": 722,
+      "latency_ms": 1095,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_403": {
+      "prompt_tokens": 681,
+      "completion_tokens": 32,
+      "total_tokens": 713,
+      "latency_ms": 1378,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_399": {
+      "prompt_tokens": 681,
+      "completion_tokens": 36,
+      "total_tokens": 717,
+      "latency_ms": 1077,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_405": {
+      "prompt_tokens": 689,
+      "completion_tokens": 40,
+      "total_tokens": 729,
+      "latency_ms": 1238,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_406": {
+      "prompt_tokens": 677,
+      "completion_tokens": 38,
+      "total_tokens": 715,
+      "latency_ms": 1480,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_408": {
+      "prompt_tokens": 684,
+      "completion_tokens": 37,
+      "total_tokens": 721,
+      "latency_ms": 1595,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_410": {
+      "prompt_tokens": 681,
+      "completion_tokens": 30,
+      "total_tokens": 711,
+      "latency_ms": 1318,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_409": {
+      "prompt_tokens": 679,
+      "completion_tokens": 32,
+      "total_tokens": 711,
+      "latency_ms": 1827,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_411": {
+      "prompt_tokens": 682,
+      "completion_tokens": 30,
+      "total_tokens": 712,
+      "latency_ms": 1088,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_412": {
+      "prompt_tokens": 688,
+      "completion_tokens": 43,
+      "total_tokens": 731,
+      "latency_ms": 1155,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_397": {
+      "prompt_tokens": 680,
+      "completion_tokens": 32,
+      "total_tokens": 712,
+      "latency_ms": 1233,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_414": {
+      "prompt_tokens": 682,
+      "completion_tokens": 37,
+      "total_tokens": 719,
+      "latency_ms": 1102,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_415": {
+      "prompt_tokens": 683,
+      "completion_tokens": 38,
+      "total_tokens": 721,
+      "latency_ms": 1385,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_417": {
+      "prompt_tokens": 691,
+      "completion_tokens": 50,
+      "total_tokens": 741,
+      "latency_ms": 1429,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_404": {
+      "prompt_tokens": 678,
+      "completion_tokens": 30,
+      "total_tokens": 708,
+      "latency_ms": 1049,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_418": {
+      "prompt_tokens": 680,
+      "completion_tokens": 30,
+      "total_tokens": 710,
+      "latency_ms": 1866,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_416": {
+      "prompt_tokens": 677,
+      "completion_tokens": 43,
+      "total_tokens": 720,
+      "latency_ms": 1212,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_419": {
+      "prompt_tokens": 682,
+      "completion_tokens": 34,
+      "total_tokens": 716,
+      "latency_ms": 2199,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_422": {
+      "prompt_tokens": 681,
+      "completion_tokens": 32,
+      "total_tokens": 713,
+      "latency_ms": 1483,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_424": {
+      "prompt_tokens": 682,
+      "completion_tokens": 30,
+      "total_tokens": 712,
+      "latency_ms": 948,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_423": {
+      "prompt_tokens": 683,
+      "completion_tokens": 40,
+      "total_tokens": 723,
+      "latency_ms": 1239,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_428": {
+      "prompt_tokens": 686,
+      "completion_tokens": 32,
+      "total_tokens": 718,
+      "latency_ms": 988,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_427": {
+      "prompt_tokens": 680,
+      "completion_tokens": 31,
+      "total_tokens": 711,
+      "latency_ms": 1071,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_425": {
+      "prompt_tokens": 686,
+      "completion_tokens": 36,
+      "total_tokens": 722,
+      "latency_ms": 1980,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_430": {
+      "prompt_tokens": 679,
+      "completion_tokens": 32,
+      "total_tokens": 711,
+      "latency_ms": 959,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_429": {
+      "prompt_tokens": 710,
+      "completion_tokens": 42,
+      "total_tokens": 752,
+      "latency_ms": 1375,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_431": {
+      "prompt_tokens": 680,
+      "completion_tokens": 34,
+      "total_tokens": 714,
+      "latency_ms": 1166,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_432": {
+      "prompt_tokens": 682,
+      "completion_tokens": 37,
+      "total_tokens": 719,
+      "latency_ms": 1182,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_433": {
+      "prompt_tokens": 679,
+      "completion_tokens": 33,
+      "total_tokens": 712,
+      "latency_ms": 1219,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_434": {
+      "prompt_tokens": 683,
+      "completion_tokens": 30,
+      "total_tokens": 713,
+      "latency_ms": 1084,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_436": {
+      "prompt_tokens": 680,
+      "completion_tokens": 30,
+      "total_tokens": 710,
+      "latency_ms": 948,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_435": {
+      "prompt_tokens": 693,
+      "completion_tokens": 36,
+      "total_tokens": 729,
+      "latency_ms": 1306,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_437": {
+      "prompt_tokens": 680,
+      "completion_tokens": 32,
+      "total_tokens": 712,
+      "latency_ms": 1078,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_440": {
+      "prompt_tokens": 683,
+      "completion_tokens": 32,
+      "total_tokens": 715,
+      "latency_ms": 1068,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_439": {
+      "prompt_tokens": 682,
+      "completion_tokens": 39,
+      "total_tokens": 721,
+      "latency_ms": 1248,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_441": {
+      "prompt_tokens": 682,
+      "completion_tokens": 34,
+      "total_tokens": 716,
+      "latency_ms": 1062,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_442": {
+      "prompt_tokens": 679,
+      "completion_tokens": 47,
+      "total_tokens": 726,
+      "latency_ms": 1111,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_444": {
+      "prompt_tokens": 689,
+      "completion_tokens": 40,
+      "total_tokens": 729,
+      "latency_ms": 1163,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_445": {
+      "prompt_tokens": 677,
+      "completion_tokens": 30,
+      "total_tokens": 707,
+      "latency_ms": 1023,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_446": {
+      "prompt_tokens": 684,
+      "completion_tokens": 43,
+      "total_tokens": 727,
+      "latency_ms": 1091,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_448": {
+      "prompt_tokens": 682,
+      "completion_tokens": 32,
+      "total_tokens": 714,
+      "latency_ms": 1069,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_449": {
+      "prompt_tokens": 682,
+      "completion_tokens": 30,
+      "total_tokens": 712,
+      "latency_ms": 1288,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_451": {
+      "prompt_tokens": 680,
+      "completion_tokens": 31,
+      "total_tokens": 711,
+      "latency_ms": 1055,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_447": {
+      "prompt_tokens": 682,
+      "completion_tokens": 37,
+      "total_tokens": 719,
+      "latency_ms": 3322,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_454": {
+      "prompt_tokens": 681,
+      "completion_tokens": 32,
+      "total_tokens": 713,
+      "latency_ms": 1065,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_450": {
+      "prompt_tokens": 682,
+      "completion_tokens": 35,
+      "total_tokens": 717,
+      "latency_ms": 1052,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_457": {
+      "prompt_tokens": 679,
+      "completion_tokens": 39,
+      "total_tokens": 718,
+      "latency_ms": 1317,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_456": {
+      "prompt_tokens": 691,
+      "completion_tokens": 50,
+      "total_tokens": 741,
+      "latency_ms": 1651,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_459": {
+      "prompt_tokens": 687,
+      "completion_tokens": 35,
+      "total_tokens": 722,
+      "latency_ms": 1177,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_460": {
+      "prompt_tokens": 684,
+      "completion_tokens": 30,
+      "total_tokens": 714,
+      "latency_ms": 1064,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_455": {
+      "prompt_tokens": 680,
+      "completion_tokens": 44,
+      "total_tokens": 724,
+      "latency_ms": 1184,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_461": {
+      "prompt_tokens": 677,
+      "completion_tokens": 36,
+      "total_tokens": 713,
+      "latency_ms": 1087,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_463": {
+      "prompt_tokens": 686,
+      "completion_tokens": 36,
+      "total_tokens": 722,
+      "latency_ms": 1178,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_464": {
+      "prompt_tokens": 686,
+      "completion_tokens": 30,
+      "total_tokens": 716,
+      "latency_ms": 1015,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_465": {
+      "prompt_tokens": 683,
+      "completion_tokens": 33,
+      "total_tokens": 716,
+      "latency_ms": 1027,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_467": {
+      "prompt_tokens": 684,
+      "completion_tokens": 38,
+      "total_tokens": 722,
+      "latency_ms": 1301,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_458": {
+      "prompt_tokens": 683,
+      "completion_tokens": 29,
+      "total_tokens": 712,
+      "latency_ms": 1136,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_468": {
+      "prompt_tokens": 710,
+      "completion_tokens": 42,
+      "total_tokens": 752,
+      "latency_ms": 1238,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_469": {
+      "prompt_tokens": 685,
+      "completion_tokens": 36,
+      "total_tokens": 721,
+      "latency_ms": 1073,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_472": {
+      "prompt_tokens": 682,
+      "completion_tokens": 37,
+      "total_tokens": 719,
+      "latency_ms": 1281,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_473": {
+      "prompt_tokens": 680,
+      "completion_tokens": 33,
+      "total_tokens": 713,
+      "latency_ms": 1223,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_462": {
+      "prompt_tokens": 681,
+      "completion_tokens": 37,
+      "total_tokens": 718,
+      "latency_ms": 1045,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_476": {
+      "prompt_tokens": 682,
+      "completion_tokens": 32,
+      "total_tokens": 714,
+      "latency_ms": 1165,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_475": {
+      "prompt_tokens": 676,
+      "completion_tokens": 34,
+      "total_tokens": 710,
+      "latency_ms": 1578,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_480": {
+      "prompt_tokens": 685,
+      "completion_tokens": 30,
+      "total_tokens": 715,
+      "latency_ms": 960,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_479": {
+      "prompt_tokens": 682,
+      "completion_tokens": 31,
+      "total_tokens": 713,
+      "latency_ms": 1585,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_481": {
+      "prompt_tokens": 685,
+      "completion_tokens": 30,
+      "total_tokens": 715,
+      "latency_ms": 1096,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_482": {
+      "prompt_tokens": 683,
+      "completion_tokens": 32,
+      "total_tokens": 715,
+      "latency_ms": 1234,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_483": {
+      "prompt_tokens": 689,
+      "completion_tokens": 40,
+      "total_tokens": 729,
+      "latency_ms": 1066,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_474": {
+      "prompt_tokens": 693,
+      "completion_tokens": 36,
+      "total_tokens": 729,
+      "latency_ms": 1154,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_485": {
+      "prompt_tokens": 679,
+      "completion_tokens": 30,
+      "total_tokens": 709,
+      "latency_ms": 1171,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_487": {
+      "prompt_tokens": 681,
+      "completion_tokens": 52,
+      "total_tokens": 733,
+      "latency_ms": 1139,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_489": {
+      "prompt_tokens": 682,
+      "completion_tokens": 41,
+      "total_tokens": 723,
+      "latency_ms": 1331,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_490": {
+      "prompt_tokens": 684,
+      "completion_tokens": 30,
+      "total_tokens": 714,
+      "latency_ms": 1008,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_492": {
+      "prompt_tokens": 681,
+      "completion_tokens": 30,
+      "total_tokens": 711,
+      "latency_ms": 1564,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_491": {
+      "prompt_tokens": 683,
+      "completion_tokens": 32,
+      "total_tokens": 715,
+      "latency_ms": 1064,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_496": {
+      "prompt_tokens": 678,
+      "completion_tokens": 31,
+      "total_tokens": 709,
+      "latency_ms": 948,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_495": {
+      "prompt_tokens": 691,
+      "completion_tokens": 50,
+      "total_tokens": 741,
+      "latency_ms": 1349,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_499": {
+      "prompt_tokens": 682,
+      "completion_tokens": 38,
+      "total_tokens": 720,
+      "latency_ms": 1338,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_500": {
+      "prompt_tokens": 686,
+      "completion_tokens": 38,
+      "total_tokens": 724,
+      "latency_ms": 1102,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_494": {
+      "prompt_tokens": 683,
+      "completion_tokens": 44,
+      "total_tokens": 727,
+      "latency_ms": 1068,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_503": {
+      "prompt_tokens": 684,
+      "completion_tokens": 30,
+      "total_tokens": 714,
+      "latency_ms": 1354,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_501": {
+      "prompt_tokens": 686,
+      "completion_tokens": 37,
+      "total_tokens": 723,
+      "latency_ms": 1223,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_507": {
+      "prompt_tokens": 710,
+      "completion_tokens": 42,
+      "total_tokens": 752,
+      "latency_ms": 1190,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_505": {
+      "prompt_tokens": 684,
+      "completion_tokens": 38,
+      "total_tokens": 722,
+      "latency_ms": 1196,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_510": {
+      "prompt_tokens": 684,
+      "completion_tokens": 39,
+      "total_tokens": 723,
+      "latency_ms": 1046,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_511": {
+      "prompt_tokens": 683,
+      "completion_tokens": 40,
+      "total_tokens": 723,
+      "latency_ms": 1076,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_512": {
+      "prompt_tokens": 680,
+      "completion_tokens": 32,
+      "total_tokens": 712,
+      "latency_ms": 1062,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_515": {
+      "prompt_tokens": 679,
+      "completion_tokens": 31,
+      "total_tokens": 710,
+      "latency_ms": 926,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_516": {
+      "prompt_tokens": 687,
+      "completion_tokens": 33,
+      "total_tokens": 720,
+      "latency_ms": 1144,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_517": {
+      "prompt_tokens": 680,
+      "completion_tokens": 30,
+      "total_tokens": 710,
+      "latency_ms": 995,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_519": {
+      "prompt_tokens": 679,
+      "completion_tokens": 33,
+      "total_tokens": 712,
+      "latency_ms": 1411,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_521": {
+      "prompt_tokens": 683,
+      "completion_tokens": 31,
+      "total_tokens": 714,
+      "latency_ms": 1085,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_524": {
+      "prompt_tokens": 682,
+      "completion_tokens": 37,
+      "total_tokens": 719,
+      "latency_ms": 1087,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_520": {
+      "prompt_tokens": 681,
+      "completion_tokens": 39,
+      "total_tokens": 720,
+      "latency_ms": 1506,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_525": {
+      "prompt_tokens": 678,
+      "completion_tokens": 32,
+      "total_tokens": 710,
+      "latency_ms": 1003,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_528": {
+      "prompt_tokens": 678,
+      "completion_tokens": 38,
+      "total_tokens": 716,
+      "latency_ms": 1249,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_531": {
+      "prompt_tokens": 681,
+      "completion_tokens": 32,
+      "total_tokens": 713,
+      "latency_ms": 1350,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_532": {
+      "prompt_tokens": 686,
+      "completion_tokens": 36,
+      "total_tokens": 722,
+      "latency_ms": 1138,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_526": {
+      "prompt_tokens": 682,
+      "completion_tokens": 36,
+      "total_tokens": 718,
+      "latency_ms": 1280,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_527": {
+      "prompt_tokens": 680,
+      "completion_tokens": 30,
+      "total_tokens": 710,
+      "latency_ms": 1105,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_534": {
+      "prompt_tokens": 670,
+      "completion_tokens": 44,
+      "total_tokens": 714,
+      "latency_ms": 1720,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_536": {
+      "prompt_tokens": 664,
+      "completion_tokens": 34,
+      "total_tokens": 698,
+      "latency_ms": 1231,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_537": {
+      "prompt_tokens": 667,
+      "completion_tokens": 32,
+      "total_tokens": 699,
+      "latency_ms": 1481,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_539": {
+      "prompt_tokens": 671,
+      "completion_tokens": 40,
+      "total_tokens": 711,
+      "latency_ms": 1435,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_540": {
+      "prompt_tokens": 668,
+      "completion_tokens": 37,
+      "total_tokens": 705,
+      "latency_ms": 1216,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_543": {
+      "prompt_tokens": 680,
+      "completion_tokens": 30,
+      "total_tokens": 710,
+      "latency_ms": 1106,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_542": {
+      "prompt_tokens": 673,
+      "completion_tokens": 42,
+      "total_tokens": 715,
+      "latency_ms": 1289,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_545": {
+      "prompt_tokens": 679,
+      "completion_tokens": 33,
+      "total_tokens": 712,
+      "latency_ms": 1107,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_544": {
+      "prompt_tokens": 682,
+      "completion_tokens": 34,
+      "total_tokens": 716,
+      "latency_ms": 1260,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_546": {
+      "prompt_tokens": 689,
+      "completion_tokens": 40,
+      "total_tokens": 729,
+      "latency_ms": 1060,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_547": {
+      "prompt_tokens": 679,
+      "completion_tokens": 34,
+      "total_tokens": 713,
+      "latency_ms": 1230,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_550": {
+      "prompt_tokens": 682,
+      "completion_tokens": 38,
+      "total_tokens": 720,
+      "latency_ms": 1099,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_541": {
+      "prompt_tokens": 664,
+      "completion_tokens": 34,
+      "total_tokens": 698,
+      "latency_ms": 1187,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_549": {
+      "prompt_tokens": 680,
+      "completion_tokens": 36,
+      "total_tokens": 716,
+      "latency_ms": 1002,
+      "model": "openai/gpt-4o-mini"
+    },
+    "case_548": {
+      "prompt_tokens": 679,
+      "completion_tokens": 38,
+      "total_tokens": 717,
+      "latency_ms": 1163,
+      "model": "openai/gpt-4o-mini"
+    }
+  }
 }
