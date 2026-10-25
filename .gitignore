@@ -36,7 +36,6 @@ dump.txt
 evidence_*_dump.txt
 
 # Scratch & local verification scripts
-code/test_*.py
 scratch/
 
 # Local prediction & run artifacts

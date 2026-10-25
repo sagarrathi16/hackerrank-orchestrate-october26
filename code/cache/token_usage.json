@@ -1,8 +1,8 @@
 {
   "model_name": "openai/gpt-4o-mini",
-  "total_calls": 3166,
+  "total_calls": 3198,
   "live_calls": 512,
-  "cached_calls": 2654,
+  "cached_calls": 2686,
   "input_tokens": 349486,
   "output_tokens": 18262,
   "total_tokens": 367748,
